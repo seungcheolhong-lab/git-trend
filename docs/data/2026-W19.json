@@ -1,0 +1,943 @@
+{
+  "week": "2026-W19",
+  "generatedAt": "2026-05-08T07:24:01.747Z",
+  "stats": {
+    "topLanguages": {
+      "Swift": 1,
+      "C": 2,
+      "JavaScript": 1,
+      "Python": 2,
+      "TypeScript": 3
+    },
+    "categoryCount": {
+      "ai": 10,
+      "web": 10,
+      "tool": 10,
+      "js": 10,
+      "ts": 10,
+      "python": 10,
+      "rust": 10,
+      "go": 10
+    }
+  },
+  "repos": {
+    "all": [
+      {
+        "full_name": "darrylmorley/whatcable",
+        "html_url": "https://github.com/darrylmorley/whatcable",
+        "description": "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
+        "descKo": "mac에 연결된 각 USB-C 케이블이 실제로 무엇을 할 수 있는지 영어로 알려주는 macOS 메뉴 바 앱",
+        "language": "Swift",
+        "stargazers_count": 2122,
+        "forks_count": 43,
+        "license": "MIT"
+      },
+      {
+        "full_name": "V4bel/dirtyfrag",
+        "html_url": "https://github.com/V4bel/dirtyfrag",
+        "description": null,
+        "descKo": null,
+        "language": "C",
+        "stargazers_count": 1638,
+        "forks_count": 252,
+        "license": null
+      },
+      {
+        "full_name": "aattaran/deepclaude",
+        "html_url": "https://github.com/aattaran/deepclaude",
+        "description": "Use Claude Code's autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible backend. Same UX, 17x cheaper.",
+        "descKo": "Claude Code의 자율 에이전트 루프를 DeepSeek V4 Pro, OpenRouter 또는 Anthropic 호환 백엔드와 함께 사용하십시오. 동일한 UX, 17배 저렴합니다.",
+        "language": "JavaScript",
+        "stargazers_count": 1614,
+        "forks_count": 90,
+        "license": "MIT"
+      },
+      {
+        "full_name": "yaojingang/yao-open-prompts",
+        "html_url": "https://github.com/yaojingang/yao-open-prompts",
+        "description": "Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "descKo": "야오 오픈 프롬프트 ：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "language": "Python",
+        "stargazers_count": 1262,
+        "forks_count": 193,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "mattpocock/dictionary-of-ai-coding",
+        "html_url": "https://github.com/mattpocock/dictionary-of-ai-coding",
+        "description": "AI coding jargon, explained in plain English.",
+        "descKo": "일반 영어로 설명된 AI 코딩 전문 용어.",
+        "language": "TypeScript",
+        "stargazers_count": 1252,
+        "forks_count": 149,
+        "license": null
+      },
+      {
+        "full_name": "strukto-ai/mirage",
+        "html_url": "https://github.com/strukto-ai/mirage",
+        "description": "A Unified Virtual Filesystem For AI Agents",
+        "descKo": "AI 에이전트를 위한 통합 가상 파일 시스템",
+        "language": "TypeScript",
+        "stargazers_count": 1142,
+        "forks_count": 70,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "XBuilderLAB/cheat-on-content",
+        "html_url": "https://github.com/XBuilderLAB/cheat-on-content",
+        "description": "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month.",
+        "descKo": "콘텐츠는 이미 치트 코드 레이스입니다. 패턴을 먼저 크랙하는 사람이 트래픽을 이깁니다. 글로벌 평균이 아닌 계정을 학습하는 자동 진화 운영 전문가. 1개월 만에 100만 명의 팔로워를 확보한 Claude Code 워크플로우",
+        "language": "Python",
+        "stargazers_count": 1080,
+        "forks_count": 230,
+        "license": "MIT"
+      },
+      {
+        "full_name": "antirez/ds4",
+        "html_url": "https://github.com/antirez/ds4",
+        "description": "DeepSeek 4 Flash local inference engine for Metal",
+        "descKo": "금속용 DeepSeek 4 플래시 로컬 추론 엔진",
+        "language": "C",
+        "stargazers_count": 1076,
+        "forks_count": 54,
+        "license": "MIT"
+      },
+      {
+        "full_name": "crafter-station/petdex",
+        "html_url": "https://github.com/crafter-station/petdex",
+        "description": "Public gallery of animated Codex pets",
+        "descKo": "애니메이션 코덱스 애완동물의 공개 갤러리",
+        "language": "TypeScript",
+        "stargazers_count": 1026,
+        "forks_count": 46,
+        "license": "MIT"
+      },
+      {
+        "full_name": "jherrodthomas/automotive-skills-suite",
+        "html_url": "https://github.com/jherrodthomas/automotive-skills-suite",
+        "description": "100+ installable Claude skills covering Engineering areas such as, ISO 26262 functional safety, ISO/SAE 21434 cybersecurity, ISO 21448 SOTIF, AIAG-VDA quality (APQP/PPAP/FMEA), Automotive SPICE, and continuous improvement tools — every builder paired with a confirmation reviewer.",
+        "descKo": "ISO 26262 기능 안전, ISO/SAE 21434 사이버 보안, ISO 21448 SOTIF, AIAG-VDA 품질 (APQP/PPAP/FMEA), 자동차 SPICE 및 지속적인 개선 도구와 같은 엔지니어링 영역을 다루는 100가지 이상의 설치 가능한 Claude 기술 — 모든 빌더는 확인 검토자와 페어링됩니다.",
+        "language": null,
+        "stargazers_count": 946,
+        "forks_count": 15,
+        "license": "MIT"
+      }
+    ],
+    "ai": [
+      {
+        "full_name": "raiyanyahya/how-to-train-your-gpt",
+        "html_url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+        "description": "Build a modern LLM from scratch. Every line commented. Explained like we are five.",
+        "descKo": "처음부터 현대적인 LLM을 구축하세요. 모든 줄에 댓글이 달렸습니다. 우리가 다섯 살인 것처럼 설명했습니다.",
+        "language": "Jupyter Notebook",
+        "stargazers_count": 714,
+        "forks_count": 91,
+        "license": "MIT"
+      },
+      {
+        "full_name": "lightseekorg/tokenspeed",
+        "html_url": "https://github.com/lightseekorg/tokenspeed",
+        "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+        "descKo": "TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.",
+        "language": "Python",
+        "stargazers_count": 698,
+        "forks_count": 43,
+        "license": "MIT"
+      },
+      {
+        "full_name": "joshawome/chainreason",
+        "html_url": "https://github.com/joshawome/chainreason",
+        "description": "A benchmark for evaluating LLM reasoning on Ethereum and DeFi tasks",
+        "descKo": "이더리움 및 DeFi 작업에 대한 LLM 추론을 평가하기 위한 벤치마크",
+        "language": "Python",
+        "stargazers_count": 303,
+        "forks_count": 209,
+        "license": "MIT"
+      },
+      {
+        "full_name": "butthtio/solidity-cot-auditor",
+        "html_url": "https://github.com/butthtio/solidity-cot-auditor",
+        "description": "Multi-role chain-of-thought LLM pipeline for Solidity security auditing, layered on top of Slither output.",
+        "descKo": "Slither 출력 위에 계층화된 Solidity 보안 감사를 위한 다중 역할 Chain-of-thought LLM 파이프라인.",
+        "language": "Python",
+        "stargazers_count": 293,
+        "forks_count": 196,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "lukiIabs/skills",
+        "html_url": "https://github.com/lukiIabs/skills",
+        "description": "Cursor Claude MCP SKILL.md TypeScript Node.js AI agent prompts automation developer tooling IDE productivity skills repository open source",
+        "descKo": "커서 Claude MCP SKILL.md TypeScript Node.js AI 에이전트 프롬프트 자동화 개발자 툴링 IDE 생산성 기술 저장소 오픈 소스",
+        "language": "TypeScript",
+        "stargazers_count": 242,
+        "forks_count": 222,
+        "license": "MIT"
+      },
+      {
+        "full_name": "lukiIabs/trading-agents",
+        "html_url": "https://github.com/lukiIabs/trading-agents",
+        "description": "TradingAgents LLM multi-agent finance trading stocks crypto fintech quantitative algo trading sentiment analysis OpenAI JavaScript Node.js research OSS",
+        "descKo": "TradingAgents LLM 다중 에이전트 금융 거래 주식 암호화 핀테크 정량적 알고리즘 거래 감정 분석 OpenAI JavaScript Node.js 연구 OSS",
+        "language": "Python",
+        "stargazers_count": 239,
+        "forks_count": 216,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "warpdot-dev/composio",
+        "html_url": "https://github.com/warpdot-dev/composio",
+        "description": "typescript python sdk ai-agents anthropic openapi langchain openai-agents llamaindex mastra vercel-ai mcp oauth saas llm integrations agent-tools automation cloudflare google-gemini tooling rag multi-provider developer-sdk composable-actions webhook-triggers",
+        "descKo": "typescript python sdk ai-agents anthropic openapi langchain openai-agents llamaindex mastra vercel-ai mcp oauth saas llm integrations agent-tools automation cloudflare google-gemini tooling rag multi-provider developer-sdk composable-actions webhook-triggers",
+        "language": "TypeScript",
+        "stargazers_count": 237,
+        "forks_count": 225,
+        "license": "MIT"
+      },
+      {
+        "full_name": "warpdot-dev/craft-agents-oss",
+        "html_url": "https://github.com/warpdot-dev/craft-agents-oss",
+        "description": "electron anthropic claude-agent-sdk mcp bun websocket thin-client multi-llm openapi skills automations oauth desktop-ai github-copilot google-ai chatgpt devtools apache-2 headless-server pi-sdk vscode-alternative linux macos windows",
+        "descKo": "전자 anthropic claude-agent-sdk mcp bun websocket thin-client multi-llm openapi skills automations oauth desktop-ai github-copilot google-ai chatgpt devtools apache-2 headless-server pi-sdk vscode-alternative linux macos windows",
+        "language": "TypeScript",
+        "stargazers_count": 225,
+        "forks_count": 241,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "bestpracticaI/kalshi-ai-trading-bot",
+        "html_url": "https://github.com/bestpracticaI/kalshi-ai-trading-bot",
+        "description": "Kalshi prediction markets trading bot algorithmic automated trading TypeScript Node.js Kalshi REST API RSA signing OpenRouter LLM CLI npm quant fintech event contracts market making exchange API bot Kalshi SDK",
+        "descKo": "Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK",
+        "language": "TypeScript",
+        "stargazers_count": 214,
+        "forks_count": 286,
+        "license": "MIT"
+      },
+      {
+        "full_name": "NirDiamant/Agent_Memory_Techniques",
+        "html_url": "https://github.com/NirDiamant/Agent_Memory_Techniques",
+        "description": "Agent memory for LLMs: 30 runnable Jupyter notebooks covering conversation buffers, vector stores, knowledge graphs, episodic and semantic memory, MemGPT, Mem0, Letta, Zep, Graphiti, LoCoMo benchmarks, and production patterns.",
+        "descKo": "LLM용 에이전트 메모리: 대화 버퍼, 벡터 스토어, 지식 그래프, 에피소드 및 시맨틱 메모리, MemGPT, Mem0, Letta, Zep, Graphiti, LoCoMo 벤치마크 및 생산 패턴을 다루는 실행 가능한 Jupyter 노트북 30권.",
+        "language": "Jupyter Notebook",
+        "stargazers_count": 185,
+        "forks_count": 27,
+        "license": "Apache-2.0"
+      }
+    ],
+    "web": [
+      {
+        "full_name": "Jakubantalik/metal-fx",
+        "html_url": "https://github.com/Jakubantalik/metal-fx",
+        "description": "Animated WebGL liquid-metal effect for React buttons and UI components",
+        "descKo": "React 버튼 및 UI 구성 요소에 대한 애니메이션 WebGL 액체 금속 효과",
+        "language": "TypeScript",
+        "stargazers_count": 122,
+        "forks_count": 8,
+        "license": "MIT"
+      },
+      {
+        "full_name": "beenuar/AiSOC",
+        "html_url": "https://github.com/beenuar/AiSOC",
+        "description": "Open-source AI-powered Security Operations Center — alert fusion, purple-team drills, agent-assisted triage, MITRE ATT&CK investigation. MIT-licensed, self-hostable.",
+        "descKo": "오픈 소스 AI 기반 보안 운영 센터 — 경보 융합, 자주색 팀 훈련, 상담원 지원 분류, MITRE ATT&CK 조사. MIT 면허가 있고 자가 호스팅이 가능합니다.",
+        "language": "Python",
+        "stargazers_count": 103,
+        "forks_count": 2,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Renhuai123/ziwei-doushu",
+        "html_url": "https://github.com/Renhuai123/ziwei-doushu",
+        "description": "紫微斗数开源排盘引擎 — 基于倪海夏《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+        "descKo": "紫微斗数开源排盘引擎 — 基于倪海夏《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+        "language": "TypeScript",
+        "stargazers_count": 65,
+        "forks_count": 20,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Netxeo/skill-file-security",
+        "html_url": "https://github.com/Netxeo/skill-file-security",
+        "description": "One command. 29 battle-tested security checks built into every AI coding assistant you already use without leaving your IDE.",
+        "descKo": "하나의 명령. IDE를 떠나지 않고 이미 사용하고 있는 모든 AI 코딩 어시스턴트에 내장된 29개의 테스트된 보안 검사.",
+        "language": "JavaScript",
+        "stargazers_count": 50,
+        "forks_count": 6,
+        "license": null
+      },
+      {
+        "full_name": "huseynovvusal/blamebot",
+        "html_url": "https://github.com/huseynovvusal/blamebot",
+        "description": "AI on-call agent that detects deploy failures explains what broke pages the responsible team and rolls back automatically.",
+        "descKo": "배포 실패를 감지하는 AI 온콜 에이전트는 담당 팀이 페이지를 깨고 자동으로 롤백한 내용을 설명합니다.",
+        "language": "TypeScript",
+        "stargazers_count": 40,
+        "forks_count": 0,
+        "license": "MIT"
+      },
+      {
+        "full_name": "hasi98/designpull",
+        "html_url": "https://github.com/hasi98/designpull",
+        "description": "Generate Google Stitch compatible DESIGN.md files from any website using AI vision. Bring your own Gemini, OpenAI, Claude, or Ollama key. No backend, no cost.",
+        "descKo": "AI 비전을 사용하여 모든 웹사이트에서 Google Stitch 호환 DESIGN.md 파일을 생성합니다. Gemini, OpenAI, Claude 또는 Ollama 키를 지참하세요. 백엔드도, 비용도 없습니다.",
+        "language": "JavaScript",
+        "stargazers_count": 32,
+        "forks_count": 12,
+        "license": "MIT"
+      },
+      {
+        "full_name": "daishuge/playful-proxy-api-panel",
+        "html_url": "https://github.com/daishuge/playful-proxy-api-panel",
+        "description": "CLIProxyAPI-compatible fork with restored usage statistics and open-source bundled management panel frontend.",
+        "descKo": "복원된 사용 통계 및 오픈 소스 번들 관리 패널 프론트엔드가 있는 CLIProxyAPI 호환 포크.",
+        "language": "Go",
+        "stargazers_count": 30,
+        "forks_count": 2,
+        "license": "MIT"
+      },
+      {
+        "full_name": "backnotprop/codex-pets-react",
+        "html_url": "https://github.com/backnotprop/codex-pets-react",
+        "description": "Declarative React wrapper for Codex pet spritesheets",
+        "descKo": "Codex PET 스프라이트 시트용 선언적 리액트 래퍼",
+        "language": "TypeScript",
+        "stargazers_count": 30,
+        "forks_count": 2,
+        "license": "MIT"
+      },
+      {
+        "full_name": "UserZero075/Business-Management-Dashboard",
+        "html_url": "https://github.com/UserZero075/Business-Management-Dashboard",
+        "description": "DevFast Manager is an open-source business management platform for small teams and startups. It allows you to manage projects, infrastructure, finances, team, and tasks from a single web application. Built with Node.js/Fastify/Prisma (backend) and React/Tailwind (frontend).",
+        "descKo": "DevFast Manager는 소규모 팀 및 신생 기업을 위한 오픈 소스 비즈니스 관리 플랫폼입니다. 단일 웹 애플리케이션에서 프로젝트, 인프라, 재무, 팀 및 작업을 관리할 수 있습니다. Node.js/Fastify/Prisma (백엔드) 및 React/Tailwind (프론트엔드) 로 제작되었습니다.",
+        "language": "TypeScript",
+        "stargazers_count": 26,
+        "forks_count": 12,
+        "license": null
+      },
+      {
+        "full_name": "callstackincubator/agent-cdp",
+        "html_url": "https://github.com/callstackincubator/agent-cdp",
+        "description": "Command-line tool for the Chrome DevTools Protocol (CDP): debug targets, console, traces, heap snapshots, and JavaScript CPU profiling for Chrome, Node.js, and React Native.",
+        "descKo": "Chrome DevTools Protocol (CDP) 용 명령줄 도구: Chrome, Node.js 및 React Native용 디버그 대상, 콘솔, 추적, 힙 스냅샷 및 JavaScript CPU 프로파일링.",
+        "language": "TypeScript",
+        "stargazers_count": 26,
+        "forks_count": 1,
+        "license": "MIT"
+      }
+    ],
+    "tool": [
+      {
+        "full_name": "tddworks/baguette",
+        "html_url": "https://github.com/tddworks/baguette",
+        "description": "Headless iOS Simulator manager/farm + host-side input injection for iOS 26 — taps, swipes, multi-finger gestures, and 60 fps streaming",
+        "descKo": "헤드리스 iOS 시뮬레이터 관리자/팜 + iOS 26용 호스트 측 입력 주입 — 탭, 스와이프, 멀티 핑거 제스처 및 60fps 스트리밍",
+        "language": "Swift",
+        "stargazers_count": 750,
+        "forks_count": 28,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "MayersScott/rkn-block-checker",
+        "html_url": "https://github.com/MayersScott/rkn-block-checker",
+        "description": "Diagnose RKN/TSPU internet blocks layer by layer (DNS, TCP, TLS, HTTP)",
+        "descKo": "레이어별 RKN/TSPU 인터넷 블록 진단 (DNS, TCP, TLS, HTTP)",
+        "language": "Python",
+        "stargazers_count": 614,
+        "forks_count": 20,
+        "license": "MIT"
+      },
+      {
+        "full_name": "louisedesadeleer/clipify",
+        "html_url": "https://github.com/louisedesadeleer/clipify",
+        "description": "Claude Code skill: turn long videos into social-ready clips. Auto-find funny moments, cut, reframe to 9:16 with face-tracking, and burn opus-style captions.",
+        "descKo": "Claude Code 스킬: 긴 동영상을 소셜 클립으로 전환하세요. 재미있는 순간을 자동으로 찾고, 자르고, 얼굴 추적을 통해 9시 16분으로 다시 구성하고, 오푸스 스타일 캡션을 구울 수 있습니다.",
+        "language": "Python",
+        "stargazers_count": 264,
+        "forks_count": 30,
+        "license": "MIT"
+      },
+      {
+        "full_name": "lukiIabs/skills",
+        "html_url": "https://github.com/lukiIabs/skills",
+        "description": "Cursor Claude MCP SKILL.md TypeScript Node.js AI agent prompts automation developer tooling IDE productivity skills repository open source",
+        "descKo": "커서 Claude MCP SKILL.md TypeScript Node.js AI 에이전트 프롬프트 자동화 개발자 툴링 IDE 생산성 기술 저장소 오픈 소스",
+        "language": "TypeScript",
+        "stargazers_count": 242,
+        "forks_count": 222,
+        "license": "MIT"
+      },
+      {
+        "full_name": "warpdot-dev/composio",
+        "html_url": "https://github.com/warpdot-dev/composio",
+        "description": "typescript python sdk ai-agents anthropic openapi langchain openai-agents llamaindex mastra vercel-ai mcp oauth saas llm integrations agent-tools automation cloudflare google-gemini tooling rag multi-provider developer-sdk composable-actions webhook-triggers",
+        "descKo": "typescript python sdk ai-agents anthropic openapi langchain openai-agents llamaindex mastra vercel-ai mcp oauth saas llm integrations agent-tools automation cloudflare google-gemini tooling rag multi-provider developer-sdk composable-actions webhook-triggers",
+        "language": "TypeScript",
+        "stargazers_count": 237,
+        "forks_count": 225,
+        "license": "MIT"
+      },
+      {
+        "full_name": "nikolinakovacevic1/MLB-The-Show-26-PC",
+        "html_url": "https://github.com/nikolinakovacevic1/MLB-The-Show-26-PC",
+        "description": "MLB The Show 26 PC: Modding tools, roster editors & Diamond Dynasty API. Automation scripts, market analytics, and save utilities for ultimate gameplay.",
+        "descKo": "MLB The Show 26 PC: 모딩 도구, 로스터 에디터 및 다이아몬드 다이너스티 API. 최고의 게임 플레이를 위한 자동화 스크립트, 시장 분석 및 유틸리티 저장.",
+        "language": "C++",
+        "stargazers_count": 226,
+        "forks_count": 0,
+        "license": "MIT"
+      },
+      {
+        "full_name": "warpdot-dev/craft-agents-oss",
+        "html_url": "https://github.com/warpdot-dev/craft-agents-oss",
+        "description": "electron anthropic claude-agent-sdk mcp bun websocket thin-client multi-llm openapi skills automations oauth desktop-ai github-copilot google-ai chatgpt devtools apache-2 headless-server pi-sdk vscode-alternative linux macos windows",
+        "descKo": "전자 anthropic claude-agent-sdk mcp bun websocket thin-client multi-llm openapi skills automations oauth desktop-ai github-copilot google-ai chatgpt devtools apache-2 headless-server pi-sdk vscode-alternative linux macos windows",
+        "language": "TypeScript",
+        "stargazers_count": 225,
+        "forks_count": 241,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "bestpracticaI/kalshi-ai-trading-bot",
+        "html_url": "https://github.com/bestpracticaI/kalshi-ai-trading-bot",
+        "description": "Kalshi prediction markets trading bot algorithmic automated trading TypeScript Node.js Kalshi REST API RSA signing OpenRouter LLM CLI npm quant fintech event contracts market making exchange API bot Kalshi SDK",
+        "descKo": "Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK",
+        "language": "TypeScript",
+        "stargazers_count": 214,
+        "forks_count": 286,
+        "license": "MIT"
+      },
+      {
+        "full_name": "openai/openai-cli",
+        "html_url": "https://github.com/openai/openai-cli",
+        "description": "Official CLI for the OpenAI API",
+        "descKo": "OpenAI API용 공식 CLI",
+        "language": "Go",
+        "stargazers_count": 212,
+        "forks_count": 4,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "darkrishabh/agent-skills-eval",
+        "html_url": "https://github.com/darkrishabh/agent-skills-eval",
+        "description": "A test runner for agentskills.io-style AI agent skills",
+        "descKo": "Agentskills.io 스타일의 AI 에이전트 스킬 테스트 러너",
+        "language": "TypeScript",
+        "stargazers_count": 205,
+        "forks_count": 5,
+        "license": "MIT"
+      }
+    ],
+    "js": [
+      {
+        "full_name": "aattaran/deepclaude",
+        "html_url": "https://github.com/aattaran/deepclaude",
+        "description": "Use Claude Code's autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible backend. Same UX, 17x cheaper.",
+        "descKo": "Claude Code의 자율 에이전트 루프를 DeepSeek V4 Pro, OpenRouter 또는 Anthropic 호환 백엔드와 함께 사용하십시오. 동일한 UX, 17배 저렴합니다.",
+        "language": "JavaScript",
+        "stargazers_count": 1614,
+        "forks_count": 90,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Kappaemme-git/codex-startup-pressure-test-skill",
+        "html_url": "https://github.com/Kappaemme-git/codex-startup-pressure-test-skill",
+        "description": null,
+        "descKo": null,
+        "language": "JavaScript",
+        "stargazers_count": 712,
+        "forks_count": 63,
+        "license": "MIT"
+      },
+      {
+        "full_name": "thcp/stemdeck",
+        "html_url": "https://github.com/thcp/stemdeck",
+        "description": "Stemdeck is an AI-powered stem extraction platform for musicians and producers, designed to isolate vocals, drums, bass, piano and guitar  for practice, transcription, remixing, and creative audio workflows through a modern and interactive interface",
+        "descKo": "Stemdeck은 현대적이고 인터랙티브한 인터페이스를 통해 보컬, 드럼, 베이스, 피아노 및 기타의 연습, 트랜스크립션, 리믹싱 및 크리에이티브 오디오 워크플로우를 분리하도록 설계된 음악가 및 프로듀서를 위한 AI 기반 스템 추출 플랫폼입니다.",
+        "language": "JavaScript",
+        "stargazers_count": 350,
+        "forks_count": 42,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "ircfspace/teleMirror",
+        "html_url": "https://github.com/ircfspace/teleMirror",
+        "description": "A simple desktop client for viewing Telegram channels, specifically designed for complex filtering environments like Iran",
+        "descKo": "이란과 같은 복잡한 필터링 환경을 위해 특별히 설계된 텔레그램 채널을 볼 수 있는 간단한 데스크톱 클라이언트",
+        "language": "JavaScript",
+        "stargazers_count": 231,
+        "forks_count": 28,
+        "license": null
+      },
+      {
+        "full_name": "tolibear/goalbuddy",
+        "html_url": "https://github.com/tolibear/goalbuddy",
+        "description": "Supercharge Codex Goals",
+        "descKo": "수퍼차지 코덱스 목표",
+        "language": "JavaScript",
+        "stargazers_count": 201,
+        "forks_count": 17,
+        "license": "MIT"
+      },
+      {
+        "full_name": "cv-cat/XHS_ALL_IN_ONE",
+        "html_url": "https://github.com/cv-cat/XHS_ALL_IN_ONE",
+        "description": "XHS_ALL_IN_ONE 小红书全域运营",
+        "descKo": "XHS_ALL_IN_ONE 小红书全域运营",
+        "language": "JavaScript",
+        "stargazers_count": 166,
+        "forks_count": 85,
+        "license": null
+      },
+      {
+        "full_name": "maxmo2009/CMR_QC_Studio",
+        "html_url": "https://github.com/maxmo2009/CMR_QC_Studio",
+        "description": null,
+        "descKo": null,
+        "language": "JavaScript",
+        "stargazers_count": 101,
+        "forks_count": 10,
+        "license": null
+      },
+      {
+        "full_name": "m00grin/ph-intercept",
+        "html_url": "https://github.com/m00grin/ph-intercept",
+        "description": "A Pi-hole DNS visual dashboard. Blocking is represented by an interceptor ship destroying 'blocked query' baddies, space invaders style.",
+        "descKo": "파이홀 DNS 비주얼 대시보드. 차단은 우주 침략자 스타일인 '차단된 쿼리' 배디를 파괴하는 요격선으로 표시됩니다.",
+        "language": "JavaScript",
+        "stargazers_count": 91,
+        "forks_count": 4,
+        "license": "MIT"
+      },
+      {
+        "full_name": "adminlby/NTSB_FOIA_MU5735",
+        "html_url": "https://github.com/adminlby/NTSB_FOIA_MU5735",
+        "description": "由NTSB发布的3·21空难（MU5735）调查报告",
+        "descKo": "由NTSB发布的 3 · 21空难 （ MU5735 ）调查报告",
+        "language": "JavaScript",
+        "stargazers_count": 89,
+        "forks_count": 27,
+        "license": "MIT"
+      },
+      {
+        "full_name": "vivekg13186/Daisy-DAG",
+        "html_url": "https://github.com/vivekg13186/Daisy-DAG",
+        "description": null,
+        "descKo": null,
+        "language": "JavaScript",
+        "stargazers_count": 79,
+        "forks_count": 3,
+        "license": null
+      }
+    ],
+    "ts": [
+      {
+        "full_name": "mattpocock/dictionary-of-ai-coding",
+        "html_url": "https://github.com/mattpocock/dictionary-of-ai-coding",
+        "description": "AI coding jargon, explained in plain English.",
+        "descKo": "일반 영어로 설명된 AI 코딩 전문 용어.",
+        "language": "TypeScript",
+        "stargazers_count": 1252,
+        "forks_count": 149,
+        "license": null
+      },
+      {
+        "full_name": "strukto-ai/mirage",
+        "html_url": "https://github.com/strukto-ai/mirage",
+        "description": "A Unified Virtual Filesystem For AI Agents",
+        "descKo": "AI 에이전트를 위한 통합 가상 파일 시스템",
+        "language": "TypeScript",
+        "stargazers_count": 1142,
+        "forks_count": 70,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "crafter-station/petdex",
+        "html_url": "https://github.com/crafter-station/petdex",
+        "description": "Public gallery of animated Codex pets",
+        "descKo": "애니메이션 코덱스 애완동물의 공개 갤러리",
+        "language": "TypeScript",
+        "stargazers_count": 1026,
+        "forks_count": 46,
+        "license": "MIT"
+      },
+      {
+        "full_name": "moxailoo/univ3-pool-lens",
+        "html_url": "https://github.com/moxailoo/univ3-pool-lens",
+        "description": "A focused TypeScript toolkit for inspecting Uniswap V3 pools — liquidity distribution, fee yield, and impermanent-loss math from your terminal.",
+        "descKo": "Uniswap V3 풀을 검사하기 위한 초점 TypeScript 툴킷 — 터미널에서 유동성 분포, 수수료 수익률 및 영구 손실 수학.",
+        "language": "TypeScript",
+        "stargazers_count": 304,
+        "forks_count": 195,
+        "license": "MIT"
+      },
+      {
+        "full_name": "BuluBulugege/Free-BAI",
+        "html_url": "https://github.com/BuluBulugege/Free-BAI",
+        "description": null,
+        "descKo": null,
+        "language": "TypeScript",
+        "stargazers_count": 285,
+        "forks_count": 100,
+        "license": null
+      },
+      {
+        "full_name": "Ch1rpy2613/Mirrai",
+        "html_url": "https://github.com/Ch1rpy2613/Mirrai",
+        "description": null,
+        "descKo": null,
+        "language": "TypeScript",
+        "stargazers_count": 263,
+        "forks_count": 3,
+        "license": null
+      },
+      {
+        "full_name": "Composio-HQ/polymarket-kalshi-arbitrage-bot",
+        "html_url": "https://github.com/Composio-HQ/polymarket-kalshi-arbitrage-bot",
+        "description": "Polymarket Kalshi arbitrage prediction-markets trading-bot TypeScript Node.js CLOB Polygon ethers automated-trading spread-trading DeFi crypto algorithmic-trading market-making Kalshi-API Polymarket-CLOB express axios dotenv",
+        "descKo": "Polymarket Kalshi 차익 거래 예측 시장 trading-bot TypeScript Node.js CLOB Polygon ethers automated-trading spread-trading DeFi crypto algorithmic-trading market-making Kalshi-API Polymarket-CLOB express axios dotenv",
+        "language": "TypeScript",
+        "stargazers_count": 250,
+        "forks_count": 430,
+        "license": null
+      },
+      {
+        "full_name": "TitanFlow-Systems/best-of-algorithmic-trading",
+        "html_url": "https://github.com/TitanFlow-Systems/best-of-algorithmic-trading",
+        "description": "best-of algorithmic trading quant finance crypto bots frameworks APIs TA indicators libraries Freqtrade Hummingbot OctoBot Jesse Zipline backtrader CCXT Lean StockSharp Python Node Rust Go TypeScript C# Java forex stocks derivatives polymarket prediction-markets courses books YouTube Telegram communities fintech opensource weekly ranked star-score",
+        "descKo": "최고의 알고리즘 거래 퀀트 파이낸스 암호화 봇 프레임워크 API TA 지표 라이브러리 Freqtrade Hummingbot OctoBot Jesse Zipline backtrader CCXT Lean StockSharp Python Node Rust Go TypeScript C # Java 외환 주식 파생상품 폴리마켓 예측-마켓 코스 책 YouTube 텔레그램 커뮤니티 핀테크 오픈소스 주간 순위 별 점수",
+        "language": "TypeScript",
+        "stargazers_count": 249,
+        "forks_count": 263,
+        "license": "CC-BY-SA-4.0"
+      },
+      {
+        "full_name": "lukiIabs/skills",
+        "html_url": "https://github.com/lukiIabs/skills",
+        "description": "Cursor Claude MCP SKILL.md TypeScript Node.js AI agent prompts automation developer tooling IDE productivity skills repository open source",
+        "descKo": "커서 Claude MCP SKILL.md TypeScript Node.js AI 에이전트 프롬프트 자동화 개발자 툴링 IDE 생산성 기술 저장소 오픈 소스",
+        "language": "TypeScript",
+        "stargazers_count": 242,
+        "forks_count": 222,
+        "license": "MIT"
+      },
+      {
+        "full_name": "warpdot-dev/composio",
+        "html_url": "https://github.com/warpdot-dev/composio",
+        "description": "typescript python sdk ai-agents anthropic openapi langchain openai-agents llamaindex mastra vercel-ai mcp oauth saas llm integrations agent-tools automation cloudflare google-gemini tooling rag multi-provider developer-sdk composable-actions webhook-triggers",
+        "descKo": "typescript python sdk ai-agents anthropic openapi langchain openai-agents llamaindex mastra vercel-ai mcp oauth saas llm integrations agent-tools automation cloudflare google-gemini tooling rag multi-provider developer-sdk composable-actions webhook-triggers",
+        "language": "TypeScript",
+        "stargazers_count": 237,
+        "forks_count": 225,
+        "license": "MIT"
+      }
+    ],
+    "python": [
+      {
+        "full_name": "yaojingang/yao-open-prompts",
+        "html_url": "https://github.com/yaojingang/yao-open-prompts",
+        "description": "Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "descKo": "야오 오픈 프롬프트 ：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "language": "Python",
+        "stargazers_count": 1262,
+        "forks_count": 193,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "XBuilderLAB/cheat-on-content",
+        "html_url": "https://github.com/XBuilderLAB/cheat-on-content",
+        "description": "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month.",
+        "descKo": "콘텐츠는 이미 치트 코드 레이스입니다. 패턴을 먼저 크랙하는 사람이 트래픽을 이깁니다. 글로벌 평균이 아닌 계정을 학습하는 자동 진화 운영 전문가. 1개월 만에 100만 명의 팔로워를 확보한 Claude Code 워크플로우",
+        "language": "Python",
+        "stargazers_count": 1080,
+        "forks_count": 230,
+        "license": "MIT"
+      },
+      {
+        "full_name": "vibeforge1111/keep-codex-fast",
+        "html_url": "https://github.com/vibeforge1111/keep-codex-fast",
+        "description": "A backup-first Codex skill for keeping local Codex state fast, clean, and recoverable.",
+        "descKo": "현지 코덱스 상태를 빠르고 깨끗하며 복구 가능한 상태로 유지하기 위한 백업 우선 코덱스 기술입니다.",
+        "language": "Python",
+        "stargazers_count": 890,
+        "forks_count": 51,
+        "license": "MIT"
+      },
+      {
+        "full_name": "lightseekorg/tokenspeed",
+        "html_url": "https://github.com/lightseekorg/tokenspeed",
+        "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+        "descKo": "TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.",
+        "language": "Python",
+        "stargazers_count": 698,
+        "forks_count": 43,
+        "license": "MIT"
+      },
+      {
+        "full_name": "MayersScott/rkn-block-checker",
+        "html_url": "https://github.com/MayersScott/rkn-block-checker",
+        "description": "Diagnose RKN/TSPU internet blocks layer by layer (DNS, TCP, TLS, HTTP)",
+        "descKo": "레이어별 RKN/TSPU 인터넷 블록 진단 (DNS, TCP, TLS, HTTP)",
+        "language": "Python",
+        "stargazers_count": 614,
+        "forks_count": 20,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Tommy-yw/RunbookHermes",
+        "html_url": "https://github.com/Tommy-yw/RunbookHermes",
+        "description": "Hermes-native AIOps agent for evidence-driven incident response, approval-gated remediation, and runbook learning.",
+        "descKo": "증거 기반 사고 대응, 승인된 교정 및 런북 학습을 위한 에르메스 네이티브 AIOps 에이전트.",
+        "language": "Python",
+        "stargazers_count": 539,
+        "forks_count": 29,
+        "license": "MIT"
+      },
+      {
+        "full_name": "virgiliojr94/book-to-skill",
+        "html_url": "https://github.com/virgiliojr94/book-to-skill",
+        "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+        "descKo": "기술 서적 PDF를 Claude Code 기술로 전환하여 작업하는 동안 공부, 참조 및 사용할 수 있습니다.",
+        "language": "Python",
+        "stargazers_count": 492,
+        "forks_count": 54,
+        "license": "MIT"
+      },
+      {
+        "full_name": "jingyaogong/minimind-o",
+        "html_url": "https://github.com/jingyaogong/minimind-o",
+        "description": "🎙️ 「大模型」从0训练0.1B能听能说能看的全模态Omni模型！A 0.1B Omni model trained from scratch, capable of listening, speaking, and seeing!",
+        "descKo": "🎙️ 「大模型」从0训练能听能说能看的全模态 0.1B Omni模型! 처음부터 듣고 말하고 볼 수 있도록 훈련된 0.1B Omni 모델!",
+        "language": "Python",
+        "stargazers_count": 485,
+        "forks_count": 42,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "LayrKits/Sprite-Pipeline",
+        "html_url": "https://github.com/LayrKits/Sprite-Pipeline",
+        "description": "2D Sprite Sheet Creation Pipeline",
+        "descKo": "2D 스프라이트 시트 생성 파이프라인",
+        "language": "Python",
+        "stargazers_count": 425,
+        "forks_count": 43,
+        "license": null
+      },
+      {
+        "full_name": "ynsmroztas/cPanelSniper",
+        "html_url": "https://github.com/ynsmroztas/cPanelSniper",
+        "description": "CVE-2026-41940 — cPanel & WHM Authentication Bypass via Session-File CRLF Injection",
+        "descKo": "CVE-2026-41940 — 세션 파일 CRLF 주입을 통한 cPanel 및 WHM 인증 바이패스",
+        "language": "Python",
+        "stargazers_count": 363,
+        "forks_count": 111,
+        "license": null
+      }
+    ],
+    "rust": [
+      {
+        "full_name": "matthart1983/syswatch",
+        "html_url": "https://github.com/matthart1983/syswatch",
+        "description": "Single-host system diagnostics TUI. Sibling to netwatch. Twelve tabs, plain-English insights, session scrubber. macOS + Linux.",
+        "descKo": "단일 호스트 시스템 진단 TUI. Netwatch에 형제. 열두 탭, 일반 영어 통찰력, 세션 스크러버. macOS + Linux.",
+        "language": "Rust",
+        "stargazers_count": 390,
+        "forks_count": 16,
+        "license": "MIT"
+      },
+      {
+        "full_name": "evanphi7/lighthouse-router",
+        "html_url": "https://github.com/evanphi7/lighthouse-router",
+        "description": "Off-chain DEX route discovery on Solana — pool decoders, multi-hop quoting, and arbitrage cycle detection",
+        "descKo": "Solana에서 오프체인 DEX 경로 검색 — 풀 디코더, 멀티 홉 견적 및 차익거래 사이클 감지",
+        "language": "Rust",
+        "stargazers_count": 287,
+        "forks_count": 180,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "Avarok-Cybersecurity/atlas",
+        "html_url": "https://github.com/Avarok-Cybersecurity/atlas",
+        "description": "Pure Rust Inference Engine",
+        "descKo": "순수한 녹 추론 엔진",
+        "language": "Rust",
+        "stargazers_count": 124,
+        "forks_count": 10,
+        "license": "AGPL-3.0"
+      },
+      {
+        "full_name": "wojtczyk/trust",
+        "html_url": "https://github.com/wojtczyk/trust",
+        "description": "TRUST – Coding Rust like it's 1989",
+        "descKo": "신뢰 – 1989년과 같은 러스트 코딩",
+        "language": "Rust",
+        "stargazers_count": 95,
+        "forks_count": 2,
+        "license": "MIT"
+      },
+      {
+        "full_name": "reakjra/omikuji",
+        "html_url": "https://github.com/reakjra/omikuji",
+        "description": "Qt/QML based game launcher for Linux",
+        "descKo": "Linux용 Qt/QML 기반 게임 런처",
+        "language": "Rust",
+        "stargazers_count": 73,
+        "forks_count": 3,
+        "license": "GPL-3.0"
+      },
+      {
+        "full_name": "DeepSeek-TUI/DeepSeek-TUI",
+        "html_url": "https://github.com/DeepSeek-TUI/DeepSeek-TUI",
+        "description": "Install DeepSeek TUI - Coding agent for DeepSeek models that runs in your terminal.",
+        "descKo": "터미널에서 실행되는 DeepSeek 모델용 DeepSeek TUI - 코딩 에이전트를 설치합니다.",
+        "language": "Rust",
+        "stargazers_count": 72,
+        "forks_count": 11,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "puemos/sshoosh",
+        "html_url": "https://github.com/puemos/sshoosh",
+        "description": "Tiny self-hosted SSH/TUI workspace chat for small teams and operators who want real-time collaboration over SSH.",
+        "descKo": "SSH를 통해 실시간 협업을 원하는 소규모 팀 및 운영자를 위한 소규모 독립 호스트 SSH/TUI 작업 공간 채팅.",
+        "language": "Rust",
+        "stargazers_count": 64,
+        "forks_count": 3,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "isene/scribe",
+        "html_url": "https://github.com/isene/scribe",
+        "description": "Modal text editor for writers — vim-like core, single binary. Part of the Fe2O3 Rust terminal suite.",
+        "descKo": "작가를 위한 모달 텍스트 편집기 — vim과 같은 코어, 단일 바이너리. Fe2O3 Rust 터미널 제품군의 일부입니다.",
+        "language": "Rust",
+        "stargazers_count": 57,
+        "forks_count": 0,
+        "license": null
+      },
+      {
+        "full_name": "beava-dev/beava",
+        "html_url": "https://github.com/beava-dev/beava",
+        "description": "Real-time feature server for fraud, ad-tech, and behavioral analytics.",
+        "descKo": "사기, 광고 기술 및 행동 분석을 위한 실시간 기능 서버.",
+        "language": "Rust",
+        "stargazers_count": 49,
+        "forks_count": 2,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "reekta92/graf",
+        "html_url": "https://github.com/reekta92/graf",
+        "description": "A TUI graph view for markdown files with wikilinks. Customizable.",
+        "descKo": "위키링크가 있는 마크다운 파일에 대한 TUI 그래프 보기. 사용자 정의 가능.",
+        "language": "Rust",
+        "stargazers_count": 49,
+        "forks_count": 4,
+        "license": "GPL-3.0"
+      }
+    ],
+    "go": [
+      {
+        "full_name": "ThisIsDara/mhr-cfw-go",
+        "html_url": "https://github.com/ThisIsDara/mhr-cfw-go",
+        "description": "A local proxy that runs on your machine and forwards traffic through Google.",
+        "descKo": "컴퓨터에서 실행되고 Google을 통해 트래픽을 전달하는 로컬 프록시입니다.",
+        "language": "Go",
+        "stargazers_count": 266,
+        "forks_count": 21,
+        "license": "MIT"
+      },
+      {
+        "full_name": "ajavadinezhad/zyrln",
+        "html_url": "https://github.com/ajavadinezhad/zyrln",
+        "description": "Domain-fronting relay that routes traffic through Google infrastructure to bypass DPI-based censorship,  Android VPN    app + desktop proxy",
+        "descKo": "DPI 기반 검열, Android VPN 앱 + 데스크톱 프록시를 우회하기 위해 Google 인프라를 통해 트래픽을 라우팅하는 도메인 프론팅 릴레이",
+        "language": "Go",
+        "stargazers_count": 260,
+        "forks_count": 37,
+        "license": "MIT"
+      },
+      {
+        "full_name": "openai/openai-cli",
+        "html_url": "https://github.com/openai/openai-cli",
+        "description": "Official CLI for the OpenAI API",
+        "descKo": "OpenAI API용 공식 CLI",
+        "language": "Go",
+        "stargazers_count": 212,
+        "forks_count": 4,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "gofsnotify/fsnotify",
+        "html_url": "https://github.com/gofsnotify/fsnotify",
+        "description": "Cross-platform file system notifications for Go.",
+        "descKo": "Go에 대한 교차 플랫폼 파일 시스템 알림.",
+        "language": "Go",
+        "stargazers_count": 153,
+        "forks_count": 5,
+        "license": "MIT"
+      },
+      {
+        "full_name": "marchinthesun/cluster-performance-engine",
+        "html_url": "https://github.com/marchinthesun/cluster-performance-engine",
+        "description": "Cloud-native Kubernetes performance optimizer for high-core bare-metal clusters. A NUMA-aware scheduler for HPC, ML inference, and CI/CD that cuts latency on 128+ core EPYC/Threadripper nodes.",
+        "descKo": "하이 코어 베어 메탈 클러스터를 위한 클라우드 네이티브 쿠버네티스 성능 최적화 도구. 128개 이상의 코어 EPYC/Threadripper 노드에서 대기 시간을 줄이는 HPC, ML 추론 및 CI/CD용 NUMA 인식 스케줄러.",
+        "language": "Go",
+        "stargazers_count": 105,
+        "forks_count": 0,
+        "license": null
+      },
+      {
+        "full_name": "denuitt1/mhr-cfw-go",
+        "html_url": "https://github.com/denuitt1/mhr-cfw-go",
+        "description": "Go port of https://github.com/denuitt1/mhr-cfw. A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.",
+        "descKo": "Https://github.com/denuitt1/mhr-cfw로 이동합니다. GAS (Google Apps Script) 를 통해 트래픽을 라우팅하고 Cloudflare Workers로 전달하는 도메인 프론팅 릴레이입니다. DPI를 우회하도록 설계되었습니다.",
+        "language": "Go",
+        "stargazers_count": 78,
+        "forks_count": 6,
+        "license": "MIT"
+      },
+      {
+        "full_name": "MiChongs/karpov-gateway",
+        "html_url": "https://github.com/MiChongs/karpov-gateway",
+        "description": "Karpov Gateway — REST API gateway + Next.js console. Go (Gin+gRPC) + PostgreSQL + Redis + OAuth2 (Linux.do) + TOTP 2FA + encrypted credential pool",
+        "descKo": "Karpov 게이트웨이 — REST API 게이트웨이 + Next.js 콘솔. Go (Gin + gRPC) + PostgreSQL + Redis + OAuth2 (Linux.do) + TOTP 2FA + 암호화된 자격 증명 풀",
+        "language": "Go",
+        "stargazers_count": 78,
+        "forks_count": 12,
+        "license": "MIT"
+      },
+      {
+        "full_name": "nyarime/gho",
+        "html_url": "https://github.com/nyarime/gho",
+        "description": "Pure Go Norton Ghost GHO disk image parser — no CGo, single binary",
+        "descKo": "Pure Go Norton Ghost GHO 디스크 이미지 파서 — CGo 없음, 단일 바이너리",
+        "language": "Go",
+        "stargazers_count": 77,
+        "forks_count": 6,
+        "license": "MIT"
+      },
+      {
+        "full_name": "watany-dev/gitreal",
+        "html_url": "https://github.com/watany-dev/gitreal",
+        "description": null,
+        "descKo": null,
+        "language": "Go",
+        "stargazers_count": 77,
+        "forks_count": 0,
+        "license": "MIT"
+      },
+      {
+        "full_name": "soub4i/gh-relay",
+        "html_url": "https://github.com/soub4i/gh-relay",
+        "description": "Share a private GitHub repo with anyone, no collaborator invite, no paid seat, no cleanup.",
+        "descKo": "누구와도 비공개 GitHub 저장소를 공유하세요. 공동작업자 초대도, 유료 좌석도, 정리도 없습니다.",
+        "language": "Go",
+        "stargazers_count": 74,
+        "forks_count": 10,
+        "license": "MIT"
+      }
+    ]
+  }
+}
