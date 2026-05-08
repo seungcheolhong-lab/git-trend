@@ -1,4 +1,5 @@
 node_modules/
 .env
 *.py
+!send_mail.py
 .claude/
