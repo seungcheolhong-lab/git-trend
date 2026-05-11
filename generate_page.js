@@ -8,6 +8,8 @@ const path = require("path");
 const TOKEN = process.env.GITHUB_TOKEN;
 if (!TOKEN) { console.error("오류: GITHUB_TOKEN 환경변수를 설정해주세요."); process.exit(1); }
 
+const GEMINI_KEY = process.env.GEMINI_API_KEY;
+
 const SINCE = "weekly";
 
 const CATEGORIES = {
@@ -130,6 +132,76 @@ function isSpam(repo) {
   return words.length > 0 && Math.max(...Object.values(freq)) >= 4;
 }
 
+// ── README fetch ─────────────────────────────────────────────────────────────
+
+function fetchReadme(full_name) {
+  const [owner, repo] = full_name.split("/");
+  return new Promise((resolve) => {
+    https.get({
+      hostname: "api.github.com",
+      path: `/repos/${owner}/${repo}/readme`,
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "github-trending-cli/1.0",
+      },
+    }, (res) => {
+      let body = "";
+      res.on("data", c => body += c);
+      res.on("end", () => {
+        try {
+          const content = Buffer.from(JSON.parse(body).content, "base64").toString("utf-8");
+          const text = content.replace(/!\[.*?\]\(.*?\)/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+            .replace(/[#*`>|]/g, "").replace(/\n+/g, " ").trim().slice(0, 600);
+          resolve(text);
+        } catch { resolve(""); }
+      });
+    }).on("error", () => resolve(""));
+  });
+}
+
+// ── Gemini summary ────────────────────────────────────────────────────────────
+
+function callGemini(repo, readme) {
+  if (!GEMINI_KEY) return Promise.resolve(null);
+
+  const prompt = `다음 GitHub 레포지토리 정보를 바탕으로, 개발자 대상 뉴스레터 항목처럼 2~3문장으로 한국어로 설명해줘.
+"왜 지금 주목받고 있는가"에 초점을 맞추고, 마크다운 없이 평문으로만 작성해.
+
+레포: ${repo.full_name}
+설명: ${repo.description || "없음"}
+언어: ${repo.language || "없음"}
+이번 주 별 증가: ${repo.stars_gained > 0 ? repo.stars_gained + "개" : "정보 없음"}
+README: ${readme || "없음"}`;
+
+  const bodyStr = JSON.stringify({
+    contents: [{ parts: [{ text: prompt }] }],
+    generationConfig: { maxOutputTokens: 200, temperature: 0.7 },
+  });
+
+  return new Promise((resolve) => {
+    const req = https.request({
+      hostname: "generativelanguage.googleapis.com",
+      path: `/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(bodyStr) },
+    }, (res) => {
+      let data = "";
+      res.on("data", c => data += c);
+      res.on("end", () => {
+        try {
+          const text = JSON.parse(data)?.candidates?.[0]?.content?.parts?.[0]?.text;
+          resolve(text?.trim() || null);
+        } catch { resolve(null); }
+      });
+    });
+    req.on("error", () => resolve(null));
+    req.write(bodyStr);
+    req.end();
+  });
+}
+
 // ── Translation ───────────────────────────────────────────────────────────────
 
 function translateOne(text) {
@@ -223,6 +295,7 @@ function repoCard(repo, rank) {
           ${license}
         </div>
         <p class="card-desc">${desc}</p>
+        ${repo.aiSummary ? `<p class="card-ai">${escapeHtml(repo.aiSummary)}</p>` : ""}
       </div>
     </div>`;
 }
@@ -273,6 +346,7 @@ function buildHtml(allData, generatedAt) {
     .lang { background: #21262d; border: 1px solid #30363d; color: #8b949e; font-size: .75rem; padding: .15rem .5rem; border-radius: 4px; }
     .license { background: #1c2d3f; border: 1px solid #1f6feb44; color: #58a6ff; font-size: .72rem; padding: .15rem .5rem; border-radius: 4px; }
     .card-desc { color: #8b949e; font-size: .88rem; line-height: 1.5; }
+    .card-ai { color: #e6edf3; font-size: .85rem; line-height: 1.6; margin-top: .5rem; padding-top: .5rem; border-top: 1px solid #21262d; }
     .trend-section { max-width: 860px; margin: 2rem auto; padding: 0 2rem 2rem; }
     .trend-section h2 { font-size: 1.1rem; color: #e6edf3; margin-bottom: 1.2rem; padding-bottom: .6rem; border-bottom: 1px solid #30363d; }
     .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
@@ -414,6 +488,27 @@ async function main() {
       allData[key] = [];
     }
     await new Promise(r => setTimeout(r, 1500));
+  }
+
+  // 고유 레포 모아서 Gemini 요약 생성
+  if (GEMINI_KEY) {
+    const uniqueRepos = new Map();
+    for (const repos of Object.values(allData)) {
+      for (const repo of repos) {
+        if (!uniqueRepos.has(repo.full_name)) uniqueRepos.set(repo.full_name, repo);
+      }
+    }
+    console.log(`\nGemini 요약 생성 중... (${uniqueRepos.size}개 레포)`);
+    const summaries = {};
+    for (const [full_name, repo] of uniqueRepos) {
+      process.stdout.write(`  ${full_name} ...\n`);
+      const readme = await fetchReadme(full_name);
+      summaries[full_name] = await callGemini(repo, readme);
+      await new Promise(r => setTimeout(r, 1200));
+    }
+    for (const repos of Object.values(allData)) {
+      for (const repo of repos) repo.aiSummary = summaries[repo.full_name] || null;
+    }
   }
 
   const weekId = getWeekId();

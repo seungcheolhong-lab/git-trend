@@ -25,6 +25,7 @@ jobs:
       - name: Generate trending page & weekly data
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TRENDING_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node generate_page.js
 
       - name: Send weekly email
