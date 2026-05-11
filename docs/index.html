@@ -28,6 +28,7 @@
     .card-name:hover { text-decoration: underline; }
     .card-meta { display: flex; align-items: center; gap: .8rem; margin: .3rem 0; flex-wrap: wrap; }
     .stars { color: #e3b341; font-size: .85rem; font-weight: 600; }
+    .gained { color: #3fb950; font-size: .82rem; font-weight: 600; }
     .lang { background: #21262d; border: 1px solid #30363d; color: #8b949e; font-size: .75rem; padding: .15rem .5rem; border-radius: 4px; }
     .license { background: #1c2d3f; border: 1px solid #1f6feb44; color: #58a6ff; font-size: .72rem; padding: .15rem .5rem; border-radius: 4px; }
     .card-desc { color: #8b949e; font-size: .88rem; line-height: 1.5; }
@@ -45,504 +46,44 @@
   <header>
     <h1>🔥 GitHub 핫한 오픈소스 Top 10</h1>
     <span class="badge">WEEKLY</span>
-    <span class="updated">업데이트: 2026. 5. 11. AM 10:03:57</span>
+    <span class="updated">업데이트: 2026. 5. 11. PM 1:26:51</span>
   </header>
   <nav class="tabs">
     <button class="tab-btn active" data-tab="all">전체</button>
-    <button class="tab-btn" data-tab="ai">AI/ML</button>
-    <button class="tab-btn" data-tab="web">웹</button>
-    <button class="tab-btn" data-tab="tool">도구</button>
     <button class="tab-btn" data-tab="js">JavaScript</button>
     <button class="tab-btn" data-tab="ts">TypeScript</button>
     <button class="tab-btn" data-tab="python">Python</button>
     <button class="tab-btn" data-tab="rust">Rust</button>
     <button class="tab-btn" data-tab="go">Go</button>
+    <button class="tab-btn" data-tab="ai">AI/ML</button>
+    <button class="tab-btn" data-tab="web">웹</button>
+    <button class="tab-btn" data-tab="tool">도구</button>
   </nav>
   <div class="tab-panel active" id="tab-all">
     <div class="card top3">
       <div class="card-rank">1</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/antirez/ds4" target="_blank" rel="noopener">antirez/ds4</a>
+        <a class="card-name" href="https://github.com/apps/dependabot" target="_blank" rel="noopener">apps/dependabot</a>
         <div class="card-meta">
-          <span class="stars">★ 6,174</span>
-          <span class="lang">C</span>
-          <span class="license">MIT</span>
+          <span class="stars">★ 16,251</span>
+          <span class="gained">▲ 4,020 this weekly</span>
+          <span class="lang">Ruby</span>
+          
         </div>
-        <p class="card-desc">금속용 DeepSeek 4 플래시 로컬 추론 엔진</p>
+        <p class="card-desc">오픈 소스 DocuSign 대안. 디지털 문서 작성, 작성 및 서명 ✍️</p>
       </div>
     </div>
     <div class="card top3">
       <div class="card-rank">2</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/V4bel/dirtyfrag" target="_blank" rel="noopener">V4bel/dirtyfrag</a>
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
         <div class="card-meta">
-          <span class="stars">★ 4,019</span>
-          <span class="lang">C</span>
+          <span class="stars">★ 7,102</span>
+          <span class="gained">▲ 2,483 this weekly</span>
+          <span class="lang">Python</span>
           
         </div>
-        <p class="card-desc">설명 없음</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/vercel-labs/zero-native" target="_blank" rel="noopener">vercel-labs/zero-native</a>
-        <div class="card-meta">
-          <span class="stars">★ 2,301</span>
-          <span class="lang">Zig</span>
-          <span class="license">Apache-2.0</span>
-        </div>
-        <p class="card-desc">Zig 및 웹 UI로 데스크톱 + 모바일 앱 빌드</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">4</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/strukto-ai/mirage" target="_blank" rel="noopener">strukto-ai/mirage</a>
-        <div class="card-meta">
-          <span class="stars">★ 1,794</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">Apache-2.0</span>
-        </div>
-        <p class="card-desc">AI 에이전트를 위한 통합 가상 파일 시스템</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/XBuilderLAB/cheat-on-content" target="_blank" rel="noopener">XBuilderLAB/cheat-on-content</a>
-        <div class="card-meta">
-          <span class="stars">★ 1,551</span>
-          <span class="lang">Shell</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">이 글을 읽고 계십니다. 스킬이 예견했다. 모든 포스트를 교정된 실험 (점수, 블라인드 예측, 복고, 진화) 으로 전환하는 워크플로우입니다. 미래는 노력을 보상하지 않으며, 패턴을 먼저 보는 사람들에게 보상합니다. 한 달에 1백만 명의 팔로워가 있습니다. 운이 아니라 시스템입니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/yaojingang/yao-open-prompts" target="_blank" rel="noopener">yaojingang/yao-open-prompts</a>
-        <div class="card-meta">
-          <span class="stars">★ 1,549</span>
-          <span class="lang">Python</span>
-          <span class="license">NOASSERTION</span>
-        </div>
-        <p class="card-desc">야오 오픈 프롬프트 ：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/lightseekorg/tokenspeed" target="_blank" rel="noopener">lightseekorg/tokenspeed</a>
-        <div class="card-meta">
-          <span class="stars">★ 904</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/WenyuChiou/awesome-agentic-ai-zh" target="_blank" rel="noopener">WenyuChiou/awesome-agentic-ai-zh</a>
-        <div class="card-meta">
-          <span class="stars">★ 730</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">AI Agent 中文學習地圖 — 從零開始的結構化學習路徑中 文每階段有必做練習跟必修閱讀。三語對照 （繁中 ／简中 ／ 日 本 語 ）。歡迎社群一起貢獻、優化內容。</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/huangserva/3DCellForge" target="_blank" rel="noopener">huangserva/3DCellForge</a>
-        <div class="card-meta">
-          <span class="stars">★ 729</span>
-          <span class="lang">JavaScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">AI 기반 대화형 3D 셀 생성 및 탐사 스튜디오.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">10</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/zarazhangrui/beautiful-html-templates" target="_blank" rel="noopener">zarazhangrui/beautiful-html-templates</a>
-        <div class="card-meta">
-          <span class="stars">★ 727</span>
-          <span class="lang">HTML</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">모든 코딩 에이전트가 올바른 템플릿을 선택하고 사용자를 대신하여 자동으로 멋진 덱을 생성할 수 있도록 설계된 HTML 슬라이드 템플릿 라이브러리입니다.</p>
-      </div>
-    </div>
-  </div>
-  <div class="tab-panel" id="tab-ai">
-    <div class="card top3">
-      <div class="card-rank">1</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/lightseekorg/tokenspeed" target="_blank" rel="noopener">lightseekorg/tokenspeed</a>
-        <div class="card-meta">
-          <span class="stars">★ 904</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">2</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/joshawome/chainreason" target="_blank" rel="noopener">joshawome/chainreason</a>
-        <div class="card-meta">
-          <span class="stars">★ 443</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">이더리움 및 DeFi 작업에 대한 LLM 추론을 평가하기 위한 벤치마크</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/butthtio/solidity-cot-auditor" target="_blank" rel="noopener">butthtio/solidity-cot-auditor</a>
-        <div class="card-meta">
-          <span class="stars">★ 442</span>
-          <span class="lang">Python</span>
-          <span class="license">NOASSERTION</span>
-        </div>
-        <p class="card-desc">Slither 출력 위에 계층화된 Solidity 보안 감사를 위한 다중 역할 Chain-of-thought LLM 파이프라인.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">4</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/jmerelnyc/Photo-agents" target="_blank" rel="noopener">jmerelnyc/Photo-agents</a>
-        <div class="card-meta">
-          <span class="stars">★ 366</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">자율적 자체 진화 에이전트. 컴퓨터를 작동하는 LLM 에이전트를 위한 비전 기반 계층화 메모리 및 자체 작성 기술.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/NirDiamant/Agent_Memory_Techniques" target="_blank" rel="noopener">NirDiamant/Agent_Memory_Techniques</a>
-        <div class="card-meta">
-          <span class="stars">★ 268</span>
-          <span class="lang">Jupyter Notebook</span>
-          <span class="license">Apache-2.0</span>
-        </div>
-        <p class="card-desc">LLM용 에이전트 메모리: 대화 버퍼, 벡터 스토어, 지식 그래프, 에피소드 및 시맨틱 메모리, MemGPT, Mem0, Letta, Zep, Graphiti, LoCoMo 벤치마크 및 생산 패턴을 다루는 실행 가능한 Jupyter 노트북 30권.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/bestpracticaI/kalshi-ai-trading-bot" target="_blank" rel="noopener">bestpracticaI/kalshi-ai-trading-bot</a>
-        <div class="card-meta">
-          <span class="stars">★ 207</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/OpenSquilla/opensquilla" target="_blank" rel="noopener">OpenSquilla/opensquilla</a>
-        <div class="card-meta">
-          <span class="stars">★ 191</span>
-          <span class="lang">Python</span>
-          <span class="license">Apache-2.0</span>
-        </div>
-        <p class="card-desc">OpenSquilla — 동일한 예산, 더 높은 인텔리전스 밀도를 가진 토큰 효율적인 AI 에이전트</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Sayhi-bzb/AIEden" target="_blank" rel="noopener">Sayhi-bzb/AIEden</a>
-        <div class="card-meta">
-          <span class="stars">★ 161</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">AGPL-3.0</span>
-        </div>
-        <p class="card-desc">lLM 원주민 세계와 문명</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/enmanuelmag/agent-harness-kit" target="_blank" rel="noopener">enmanuelmag/agent-harness-kit</a>
-        <div class="card-meta">
-          <span class="stars">★ 134</span>
-          <span class="lang">TypeScript</span>
-          
-        </div>
-        <p class="card-desc">코드베이스에서 구조화된 다중 에이전트 워크플로를 실행하기 위한 공급자별 스캐폴딩 키트입니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">10</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/imkunal007219/claude-coworker-model" target="_blank" rel="noopener">imkunal007219/claude-coworker-model</a>
-        <div class="card-meta">
-          <span class="stars">★ 97</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Claude Code에게 값싼 동료를 선물하세요. 저렴한 LLM (Kimi, DeepSeek, Ollama) 에 대량 I/O를 위임하는 CLI 도구. 토큰 예산의 60-70% 를 절약하세요.</p>
-      </div>
-    </div>
-  </div>
-  <div class="tab-panel" id="tab-web">
-    <div class="card top3">
-      <div class="card-rank">1</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/cclank/cell-architecture-studio" target="_blank" rel="noopener">cclank/cell-architecture-studio</a>
-        <div class="card-meta">
-          <span class="stars">★ 167</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">React 및 Three.js로 구축된 대화형 3D 셀 아키텍처 갤러리</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">2</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Jakubantalik/metal-fx" target="_blank" rel="noopener">Jakubantalik/metal-fx</a>
-        <div class="card-meta">
-          <span class="stars">★ 158</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">React 버튼 및 UI 구성 요소에 대한 애니메이션 WebGL 액체 금속 효과</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/ChristianJR19/formcms" target="_blank" rel="noopener">ChristianJR19/formcms</a>
-        <div class="card-meta">
-          <span class="stars">★ 64</span>
-          <span class="lang">C#</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">AI 에이전트: REST API, GraphQL 및 GrapesJS 페이지 디자이너를 특징으로 하는 ASP.NET Core (C #) 및 React로 구축된 오픈 소스 헤드리스 CMS.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">4</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/wangyi12358/auto-scrape-ai" target="_blank" rel="noopener">wangyi12358/auto-scrape-ai</a>
-        <div class="card-meta">
-          <span class="stars">★ 53</span>
-          <span class="lang">TypeScript</span>
-          
-        </div>
-        <p class="card-desc">Chrome DevTools 내에서 HTTP 트래픽을 캡처하고, 요청/응답 요약을 수정하고, OpenAI 호환 API를 사용하여 짧고 상세한 엔드포인트 설명을 생성하는 WXT + React 브라우저 확장 프로그램입니다 (AI 프롬프트는 기본적으로 중국어 간체 출력을 요청합니다).</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Yaogui415/newsflow-oss" target="_blank" rel="noopener">Yaogui415/newsflow-oss</a>
-        <div class="card-meta">
-          <span class="stars">★ 41</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">이벤트 추적, 증거 정리, 승인 체인, 수정 처리 및 게시 후 모니터링을 위한 AI 지원 뉴스룸 워크플로우 시스템.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Dragolone/robot-charging-station-miniprogram" target="_blank" rel="noopener">Dragolone/robot-charging-station-miniprogram</a>
-        <div class="card-meta">
-          <span class="stars">★ 38</span>
-          <span class="lang">JavaScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">微信小程序 · 机器人远程管理与实时遥控平台 · · uni-app (Vue 3) + uniCloud 云函数    + IoT 网关 (MQTT/WebSocket) | 실시간 원격 로봇 함대 관리 및 원격 운영을 위한 위챗 미니 프로그램. Uni-App (Vue 3), uniCloud 서버리스 백엔드 및 MQTT/WebSocket IoT 게이트웨이로 구축되었습니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Leonxlnx/todobar" target="_blank" rel="noopener">Leonxlnx/todobar</a>
-        <div class="card-meta">
-          <span class="stars">★ 31</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">NOASSERTION</span>
-        </div>
-        <p class="card-desc">MacOS 및 Windows용 오른쪽 끝 TODO 사이드바입니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/callstackincubator/agent-cdp" target="_blank" rel="noopener">callstackincubator/agent-cdp</a>
-        <div class="card-meta">
-          <span class="stars">★ 28</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Chrome DevTools Protocol (CDP) 용 명령줄 도구: Chrome, Node.js 및 React Native용 디버그 대상, 콘솔, 추적, 힙 스냅샷 및 JavaScript CPU 프로파일링.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/UserZero075/Business-Management-Dashboard" target="_blank" rel="noopener">UserZero075/Business-Management-Dashboard</a>
-        <div class="card-meta">
-          <span class="stars">★ 27</span>
-          <span class="lang">TypeScript</span>
-          
-        </div>
-        <p class="card-desc">DevFast Manager는 소규모 팀 및 신생 기업을 위한 오픈 소스 비즈니스 관리 플랫폼입니다. 단일 웹 애플리케이션에서 프로젝트, 인프라, 재무, 팀 및 작업을 관리할 수 있습니다. Node.js/Fastify/Prisma (백엔드) 및 React/Tailwind (프론트엔드) 로 제작되었습니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">10</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/luyou666/weiwuweixin" target="_blank" rel="noopener">luyou666/weiwuweixin</a>
-        <div class="card-meta">
-          <span class="stars">★ 24</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">围物为心 -算法赋能主观个人榜单,分享你的主观 | 무엇이든 순위를 매기세요. 취향을 공유하세요.</p>
-      </div>
-    </div>
-  </div>
-  <div class="tab-panel" id="tab-tool">
-    <div class="card top3">
-      <div class="card-rank">1</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/WenyuChiou/awesome-agentic-ai-zh" target="_blank" rel="noopener">WenyuChiou/awesome-agentic-ai-zh</a>
-        <div class="card-meta">
-          <span class="stars">★ 730</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">AI Agent 中文學習地圖 — 從零開始的結構化學習路徑中 文每階段有必做練習跟必修閱讀。三語對照 （繁中 ／简中 ／ 日 本 語 ）。歡迎社群一起貢獻、優化內容。</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">2</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/louisedesadeleer/clipify" target="_blank" rel="noopener">louisedesadeleer/clipify</a>
-        <div class="card-meta">
-          <span class="stars">★ 313</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Claude Code 스킬: 긴 동영상을 소셜 클립으로 전환하세요. 재미있는 순간을 자동으로 찾고, 자르고, 얼굴 추적을 통해 9시 16분으로 다시 구성하고, 오푸스 스타일 캡션을 구울 수 있습니다.</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/darkrishabh/agent-skills-eval" target="_blank" rel="noopener">darkrishabh/agent-skills-eval</a>
-        <div class="card-meta">
-          <span class="stars">★ 276</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Agentskills.io 스타일의 AI 에이전트 스킬 테스트 러너</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">4</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Aladdin-IT/MaaNTE" target="_blank" rel="noopener">Aladdin-IT/MaaNTE</a>
-        <div class="card-meta">
-          <span class="stars">★ 256</span>
-          <span class="lang">C++</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">MaaNTE 다운로드 Arknights 자동화 어시스턴트 일일 작업 인프라 기반 관리 채용 OCR 스크립트 파밍 리소스 플래너 자동 배포 전략 도우미 오픈 소스 도구.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/nikolinakovacevic1/MLB-The-Show-26-PC" target="_blank" rel="noopener">nikolinakovacevic1/MLB-The-Show-26-PC</a>
-        <div class="card-meta">
-          <span class="stars">★ 228</span>
-          <span class="lang">C++</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">MLB The Show 26 PC: 모딩 도구, 로스터 에디터 및 다이아몬드 다이너스티 API. 최고의 게임 플레이를 위한 자동화 스크립트, 시장 분석 및 유틸리티 저장.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/chojs23/concord" target="_blank" rel="noopener">chojs23/concord</a>
-        <div class="card-meta">
-          <span class="stars">★ 216</span>
-          <span class="lang">Rust</span>
-          <span class="license">GPL-3.0</span>
-        </div>
-        <p class="card-desc">Discord를 위한 풍부한 기능의 터미널 클라이언트</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/bestpracticaI/kalshi-ai-trading-bot" target="_blank" rel="noopener">bestpracticaI/kalshi-ai-trading-bot</a>
-        <div class="card-meta">
-          <span class="stars">★ 207</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/hoaibaone/OP-Auto-Clicker" target="_blank" rel="noopener">hoaibaone/OP-Auto-Clicker</a>
-        <div class="card-meta">
-          <span class="stars">★ 143</span>
-          <span class="lang">C#</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">OP 자동 클리커 다운로드 자동 마우스 클리커 자동화 유틸리티 게임 Roblox Minecraft 쿠키 클리커 빠른 클릭 간격 단축키 매크로 마우스 버튼 레코드 재생 무료 오픈 소스 휴대용 PC 모바일 스크립트 트리거 설정 단일 이중 트리플.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/imkunal007219/claude-coworker-model" target="_blank" rel="noopener">imkunal007219/claude-coworker-model</a>
-        <div class="card-meta">
-          <span class="stars">★ 97</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Claude Code에게 값싼 동료를 선물하세요. 저렴한 LLM (Kimi, DeepSeek, Ollama) 에 대량 I/O를 위임하는 CLI 도구. 토큰 예산의 60-70% 를 절약하세요.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">10</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/TomSolid/myPKA" target="_blank" rel="noopener">TomSolid/myPKA</a>
-        <div class="card-meta">
-          <span class="stars">★ 93</span>
-          <span class="lang">Python</span>
-          <span class="license">NOASSERTION</span>
-        </div>
-        <p class="card-desc">9명의 AI 팀이 참여하는 AI 기반 개인 지식 지원 시스템입니다. 명백한 감점. 모든 LLM. 영원하세요. 여러 세션에서 중단한 부분부터 다시 시작하세요. ICOR ® 방법론을 기반으로 합니다.</p>
+        <p class="card-desc">SimpleQA에서 최대 95% (예: 3090의 Qwen3.6-27B). 모든 로컬 및 클라우드 LLM (llama.cpp, Ollama, Google 등) 을 지원합니다. 10개 이상의 검색 엔진 - arXiv, PubMed, 개인 문서. 모든 로컬 및 암호화.</p>
       </div>
     </div>
   </div>
@@ -550,121 +91,27 @@
     <div class="card top3">
       <div class="card-rank">1</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/huangserva/3DCellForge" target="_blank" rel="noopener">huangserva/3DCellForge</a>
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
         <div class="card-meta">
-          <span class="stars">★ 730</span>
+          <span class="stars">★ 1,643</span>
+          <span class="gained">▲ 376 this weekly</span>
           <span class="lang">JavaScript</span>
-          <span class="license">MIT</span>
+          
         </div>
-        <p class="card-desc">AI 기반 대화형 3D 셀 생성 및 탐사 스튜디오.</p>
+        <p class="card-desc">코덱스 데스크톱 앱 - 크로스 플랫폼 재구축</p>
       </div>
     </div>
     <div class="card top3">
       <div class="card-rank">2</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/kunchenguid/autopreso" target="_blank" rel="noopener">kunchenguid/autopreso</a>
+        <a class="card-name" href="https://github.com/apps/renovate" target="_blank" rel="noopener">apps/renovate</a>
         <div class="card-meta">
-          <span class="stars">★ 228</span>
-          <span class="lang">JavaScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">실시간 연설부터 프레젠테이션까지. 화이트보드 화이트보드 자체를 그대로 둡니다.</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/kerlos/pordee" target="_blank" rel="noopener">kerlos/pordee</a>
-        <div class="card-meta">
-          <span class="stars">★ 225</span>
-          <span class="lang">JavaScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">ตอบสั้นๆ ก็เข้าใจแบบพอดีๆ</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">4</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/cv-cat/XHS_ALL_IN_ONE" target="_blank" rel="noopener">cv-cat/XHS_ALL_IN_ONE</a>
-        <div class="card-meta">
-          <span class="stars">★ 215</span>
+          <span class="stars">★ 1,661</span>
+          <span class="gained">▲ 24 this weekly</span>
           <span class="lang">JavaScript</span>
           
         </div>
-        <p class="card-desc">XHS_ALL_IN_ONE 小红书全域运营</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Binarylunanotice/blooket" target="_blank" rel="noopener">Binarylunanotice/blooket</a>
-        <div class="card-meta">
-          <span class="stars">★ 112</span>
-          <span class="lang">JavaScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">blooket gui || blooket || blooket api</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/m00grin/ph-intercept" target="_blank" rel="noopener">m00grin/ph-intercept</a>
-        <div class="card-meta">
-          <span class="stars">★ 102</span>
-          <span class="lang">JavaScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">파이홀 DNS 비주얼 대시보드. 차단은 우주 침략자 스타일인 '차단된 쿼리' 배디를 파괴하는 요격선으로 표시됩니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Blueemi/codex-eu-patcher" target="_blank" rel="noopener">Blueemi/codex-eu-patcher</a>
-        <div class="card-meta">
-          <span class="stars">★ 103</span>
-          <span class="lang">JavaScript</span>
-          
-        </div>
-        <p class="card-desc">설명 없음</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/killervillsy/SessionToJson" target="_blank" rel="noopener">killervillsy/SessionToJson</a>
-        <div class="card-meta">
-          <span class="stars">★ 101</span>
-          <span class="lang">JavaScript</span>
-          
-        </div>
-        <p class="card-desc">설명 없음</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/ChypherFish3r/coinbase-trading-bot" target="_blank" rel="noopener">ChypherFish3r/coinbase-trading-bot</a>
-        <div class="card-meta">
-          <span class="stars">★ 88</span>
-          <span class="lang">JavaScript</span>
-          
-        </div>
-        <p class="card-desc">선택적 이익 이전, CSV 백테스트 및 CLI를 통한 모멘텀 전략을 위한 코인베이스 트레이딩 봇</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">10</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/ethgan/Cloudflare_TextSpace_Worker" target="_blank" rel="noopener">ethgan/Cloudflare_TextSpace_Worker</a>
-        <div class="card-meta">
-          <span class="stars">★ 82</span>
-          <span class="lang">JavaScript</span>
-          <span class="license">GPL-3.0</span>
-        </div>
-        <p class="card-desc">重磅福利 | 拥抱클라우드플레어 文本直链网盘 | 拒绝限流 | CDN加速 | 100%免费 https://www.youtube.com/watch?v=QZUx4pHf0J4</p>
+        <p class="card-desc">Zed 편집기용 확장 프로그램</p>
       </div>
     </div>
   </div>
@@ -672,121 +119,40 @@
     <div class="card top3">
       <div class="card-rank">1</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/strukto-ai/mirage" target="_blank" rel="noopener">strukto-ai/mirage</a>
+        <a class="card-name" href="https://github.com/apps/renovate" target="_blank" rel="noopener">apps/renovate</a>
         <div class="card-meta">
-          <span class="stars">★ 1,794</span>
+          <span class="stars">★ 6,906</span>
+          <span class="gained">▲ 1,640 this weekly</span>
           <span class="lang">TypeScript</span>
-          <span class="license">Apache-2.0</span>
+          
         </div>
-        <p class="card-desc">AI 에이전트를 위한 통합 가상 파일 시스템</p>
+        <p class="card-desc">3D 가우시안 스플랫 에디터</p>
       </div>
     </div>
     <div class="card top3">
       <div class="card-rank">2</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/moxailoo/univ3-pool-lens" target="_blank" rel="noopener">moxailoo/univ3-pool-lens</a>
+        <a class="card-name" href="https://github.com/apps/dependabot-preview" target="_blank" rel="noopener">apps/dependabot-preview</a>
         <div class="card-meta">
-          <span class="stars">★ 439</span>
+          <span class="stars">★ 71,189</span>
+          <span class="gained">▲ 348 this weekly</span>
           <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
+          
         </div>
-        <p class="card-desc">Uniswap V3 풀을 검사하기 위한 초점 TypeScript 툴킷 — 터미널에서 유동성 분포, 수수료 수익률 및 영구 손실 수학.</p>
+        <p class="card-desc">더 현대적인 시대를 위한 터미널</p>
       </div>
     </div>
     <div class="card top3">
       <div class="card-rank">3</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/Ch1rpy2613/Mirrai" target="_blank" rel="noopener">Ch1rpy2613/Mirrai</a>
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
         <div class="card-meta">
-          <span class="stars">★ 408</span>
+          <span class="stars">★ 14,271</span>
+          <span class="gained">▲ 2,071 this weekly</span>
           <span class="lang">TypeScript</span>
           
         </div>
-        <p class="card-desc">설명 없음</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">4</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/BuluBulugege/Free-BAI" target="_blank" rel="noopener">BuluBulugege/Free-BAI</a>
-        <div class="card-meta">
-          <span class="stars">★ 296</span>
-          <span class="lang">TypeScript</span>
-          
-        </div>
-        <p class="card-desc">설명 없음</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/darkrishabh/agent-skills-eval" target="_blank" rel="noopener">darkrishabh/agent-skills-eval</a>
-        <div class="card-meta">
-          <span class="stars">★ 276</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Agentskills.io 스타일의 AI 에이전트 스킬 테스트 러너</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/TitanFlow-Systems/best-of-algorithmic-trading" target="_blank" rel="noopener">TitanFlow-Systems/best-of-algorithmic-trading</a>
-        <div class="card-meta">
-          <span class="stars">★ 272</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">CC-BY-SA-4.0</span>
-        </div>
-        <p class="card-desc">최고의 알고리즘 거래 퀀트 파이낸스 암호화 봇 프레임워크 API TA 지표 라이브러리 Freqtrade Hummingbot OctoBot Jesse Zipline backtrader CCXT Lean StockSharp Python Node Rust Go TypeScript C # Java 외환 주식 파생상품 폴리마켓 예측-마켓 코스 책 YouTube 텔레그램 커뮤니티 핀테크 오픈소스 주간 순위 별 점수</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Composio-HQ/polymarket-kalshi-arbitrage-bot" target="_blank" rel="noopener">Composio-HQ/polymarket-kalshi-arbitrage-bot</a>
-        <div class="card-meta">
-          <span class="stars">★ 243</span>
-          <span class="lang">TypeScript</span>
-          
-        </div>
-        <p class="card-desc">Polymarket Kalshi 차익 거래 예측 시장 trading-bot TypeScript Node.js CLOB Polygon ethers automated-trading spread-trading DeFi crypto algorithmic-trading market-making Kalshi-API Polymarket-CLOB express axios dotenv</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/TheSashaDev/girl-agent" target="_blank" rel="noopener">TheSashaDev/girl-agent</a>
-        <div class="card-meta">
-          <span class="stars">★ 218</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">NOASSERTION</span>
-        </div>
-        <p class="card-desc">ИИ-девушка с человеческим поведением: сон, настроение, расписание, память, стадии отношений и конфликты. Userbot mode через MTProto — реагирует, печатает, ставит реакции. Anti-AI промпт убирает ChatGPT-повадки. Не чат-бот — персонаж с стоянием.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/bestpracticaI/kalshi-ai-trading-bot" target="_blank" rel="noopener">bestpracticaI/kalshi-ai-trading-bot</a>
-        <div class="card-meta">
-          <span class="stars">★ 207</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">10</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/alvinunreal/openpets" target="_blank" rel="noopener">alvinunreal/openpets</a>
-        <div class="card-meta">
-          <span class="stars">★ 185</span>
-          <span class="lang">TypeScript</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">AI 코딩 에이전트를 위한 데스크톱 애완동물. 애완동물을 설치하고 MCP를 통해 Claude Code를 연결하면 데스크톱에서 실시간 코딩 상태를 확인할 수 있습니다.</p>
+        <p class="card-desc">AI 코딩 에이전트를 위한 컨텍스트 창 최적화. 샌드박스 툴 출력, 98% 감소. 15개 플랫폼</p>
       </div>
     </div>
   </div>
@@ -794,81 +160,224 @@
     <div class="card top3">
       <div class="card-rank">1</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/yaojingang/yao-open-prompts" target="_blank" rel="noopener">yaojingang/yao-open-prompts</a>
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
         <div class="card-meta">
-          <span class="stars">★ 1,549</span>
+          <span class="stars">★ 7,102</span>
+          <span class="gained">▲ 2,483 this weekly</span>
           <span class="lang">Python</span>
-          <span class="license">NOASSERTION</span>
+          
         </div>
-        <p class="card-desc">야오 오픈 프롬프트 ：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景</p>
+        <p class="card-desc">SimpleQA에서 최대 95% (예: 3090의 Qwen3.6-27B). 모든 로컬 및 클라우드 LLM (llama.cpp, Ollama, Google 등) 을 지원합니다. 10개 이상의 검색 엔진 - arXiv, PubMed, 개인 문서. 모든 로컬 및 암호화.</p>
       </div>
     </div>
     <div class="card top3">
       <div class="card-rank">2</div>
       <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/dependabot" target="_blank" rel="noopener">apps/dependabot</a>
+        <div class="card-meta">
+          <span class="stars">★ 27,404</span>
+          <span class="gained">▲ 3,831 this weekly</span>
+          <span class="lang">Python</span>
+          
+        </div>
+        <p class="card-desc">3000개 이상의 사이트에서 사용자 이름으로 개인 문서 🕵️‍♂️ 수집</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-panel" id="tab-rust">
+    <div class="card top3">
+      <div class="card-rank">1</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/dependabot" target="_blank" rel="noopener">apps/dependabot</a>
+        <div class="card-meta">
+          <span class="stars">★ 66,309</span>
+          <span class="gained">▲ 7,610 this weekly</span>
+          <span class="lang">Rust</span>
+          
+        </div>
+        <p class="card-desc">Claude Code, Codex, OpenCode, openclaw 및 Gemini CLI를 위한 크로스 플랫폼 데스크톱 올인원 어시스턴트 도구입니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">2</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
+        <div class="card-meta">
+          <span class="stars">★ 858</span>
+          <span class="gained">▲ 328 this weekly</span>
+          <span class="lang">Rust</span>
+          
+        </div>
+        <p class="card-desc">개인 AI 슈퍼 인텔리전스. 개인적이고 단순하며 매우 강력합니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">3</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
+        <div class="card-meta">
+          <span class="stars">★ 16,748</span>
+          <span class="gained">▲ 259 this weekly</span>
+          <span class="lang">Rust</span>
+          
+        </div>
+        <p class="card-desc">Windows 10/11용 완전 사용자 정의 데스크톱 환경.</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">4</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/dependabot" target="_blank" rel="noopener">apps/dependabot</a>
+        <div class="card-meta">
+          <span class="stars">★ 2,155</span>
+          <span class="gained">▲ 236 this weekly</span>
+          <span class="lang">Rust</span>
+          
+        </div>
+        <p class="card-desc">모바일에서 쉽게 액세스할 수 있도록 TUI 또는 웹에서 여러 Claude Code, OpenCode 에이전트를 관리합니다. 또한 Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI, Factory Droid Coding을 지원합니다. tmux 및 git 워크트리를 사용합니다.</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">5</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
+        <div class="card-meta">
+          <span class="stars">★ 2,788</span>
+          <span class="gained">▲ 262 this weekly</span>
+          <span class="lang">Rust</span>
+          
+        </div>
+        <p class="card-desc">🛰️ OpenCode, Claude Code, OpenClaw (Clawdbot/Moltbot), 🦞Pi, Codex, Gemini, Cursor, AmpCode, Factory Droid, Kimi 등에서 토큰 사용을 추적하기 위한 CLI 도구! • 🏅글로벌 리더보드 + 2D/3D 기여 그래프</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">6</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/github-actions" target="_blank" rel="noopener">apps/github-actions</a>
+        <div class="card-meta">
+          <span class="stars">★ 4,007</span>
+          <span class="gained">▲ 128 this weekly</span>
+          <span class="lang">Rust</span>
+          
+        </div>
+        <p class="card-desc">RuVector는 Rust에 내장된 고성능, 실시간, 자가 학습 Ai, 벡터 GNN, 메모리 DB입니다.</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-panel" id="tab-go">
+    <div class="card top3">
+      <div class="card-rank">1</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/dependabot" target="_blank" rel="noopener">apps/dependabot</a>
+        <div class="card-meta">
+          <span class="stars">★ 14,552</span>
+          <span class="gained">▲ 357 this weekly</span>
+          <span class="lang">Go</span>
+          
+        </div>
+        <p class="card-desc">오픈 소스 LLM 지식 플랫폼: 원시 문서를 쿼리 가능한 RAG, 자율 추리 에이전트 및 자체 유지 관리 Wiki로 전환합니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">2</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/dependabot" target="_blank" rel="noopener">apps/dependabot</a>
+        <div class="card-meta">
+          <span class="stars">★ 36,604</span>
+          <span class="gained">▲ 755 this weekly</span>
+          <span class="lang">Go</span>
+          
+        </div>
+        <p class="card-desc">다중 프로토콜 다중 사용자를 지원하는 Xray 패널은 일 및 트래픽 및 IP 제한 (Vmess, Vless, 트로이 목마, ShadowSocks, 와이어 가드, 히스테리, 터널, 혼합, HTTP, TUN) 을 만료합니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">3</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/apps/dependabot" target="_blank" rel="noopener">apps/dependabot</a>
+        <div class="card-meta">
+          <span class="stars">★ 15,795</span>
+          <span class="gained">▲ 43 this weekly</span>
+          <span class="lang">Go</span>
+          
+        </div>
+        <p class="card-desc">릴리스 엔지니어링, 단순화</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-panel" id="tab-ai">
+    <div class="card top3">
+      <div class="card-rank">1</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/Open-Less/openless" target="_blank" rel="noopener">Open-Less/openless</a>
+        <div class="card-meta">
+          <span class="stars">★ 1,174</span>
+          
+          <span class="lang">HTML</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">키 누르고 말하기, 놓기 — AI로 다듬어진 텍스트가 모든 앱의 커서에 나타납니다. macOS 및 Windows용 오픈 소스 음성 입력. (按住快捷键说话，松开即得润色后的文字)</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">2</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/raiyanyahya/how-to-train-your-gpt" target="_blank" rel="noopener">raiyanyahya/how-to-train-your-gpt</a>
+        <div class="card-meta">
+          <span class="stars">★ 950</span>
+          
+          <span class="lang">Jupyter Notebook</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">처음부터 현대적인 LLM을 구축하세요. 모든 줄에 댓글이 달렸습니다. 우리가 다섯 살인 것처럼 설명했습니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">3</div>
+      <div class="card-body">
         <a class="card-name" href="https://github.com/lightseekorg/tokenspeed" target="_blank" rel="noopener">lightseekorg/tokenspeed</a>
         <div class="card-meta">
-          <span class="stars">★ 904</span>
+          <span class="stars">★ 922</span>
+          
           <span class="lang">Python</span>
           <span class="license">MIT</span>
         </div>
         <p class="card-desc">TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.</p>
       </div>
     </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/WenyuChiou/awesome-agentic-ai-zh" target="_blank" rel="noopener">WenyuChiou/awesome-agentic-ai-zh</a>
-        <div class="card-meta">
-          <span class="stars">★ 730</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">AI Agent 中文學習地圖 — 從零開始的結構化學習路徑中 文每階段有必做練習跟必修閱讀。三語對照 （繁中 ／简中 ／ 日 本 語 ）。歡迎社群一起貢獻、優化內容。</p>
-      </div>
-    </div>
     <div class="card ">
       <div class="card-rank">4</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/BigPizzaV3/CodexPlusPlus" target="_blank" rel="noopener">BigPizzaV3/CodexPlusPlus</a>
+        <a class="card-name" href="https://github.com/StartupHakk/OpenMonoAgent.ai" target="_blank" rel="noopener">StartupHakk/OpenMonoAgent.ai</a>
         <div class="card-meta">
-          <span class="stars">★ 687</span>
-          <span class="lang">Python</span>
+          <span class="stars">★ 775</span>
           
+          <span class="lang">C#</span>
+          <span class="license">NOASSERTION</span>
         </div>
-        <p class="card-desc">一个CodexApp的增强工具</p>
+        <p class="card-desc">(BETA) AI에는 미터기가 없어야 합니다. 무제한 토큰. 영원히. 당신의 기계. 에이전트. 어디에서나 사용할 수 있습니다. 로컬 LLM으로 구동되는 터미널 네이티브 코딩 에이전트 — 100% 오픈 소스, 영원히 무료이며 단일 명령으로 설치됩니다. 자랑스럽게 C #/.NET을 기반으로 구축되었습니다. 왜냐하면 AI 툴링은 구독이 아닌 인프라여야 하기 때문입니다.</p>
       </div>
     </div>
     <div class="card ">
       <div class="card-rank">5</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/kitft/natural_language_autoencoders" target="_blank" rel="noopener">kitft/natural_language_autoencoders</a>
+        <a class="card-name" href="https://github.com/noonghunna/club-3090" target="_blank" rel="noopener">noonghunna/club-3090</a>
         <div class="card-meta">
-          <span class="stars">★ 450</span>
+          <span class="stars">★ 728</span>
+          
           <span class="lang">Python</span>
           <span class="license">Apache-2.0</span>
         </div>
-        <p class="card-desc">설명 없음</p>
+        <p class="card-desc">RTX 3090에서 LLM을 제공하기 위한 커뮤니티 레시피. 다중 엔진 (vLLM, llama.cpp, SGLang) 및 모델에 구애받지 않습니다. 현재 1x 및 2x 카드용 Qwen3.6-27B 구성으로 배송 중입니다.</p>
       </div>
     </div>
     <div class="card ">
       <div class="card-rank">6</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/joshawome/chainreason" target="_blank" rel="noopener">joshawome/chainreason</a>
-        <div class="card-meta">
-          <span class="stars">★ 443</span>
-          <span class="lang">Python</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">이더리움 및 DeFi 작업에 대한 LLM 추론을 평가하기 위한 벤치마크</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
         <a class="card-name" href="https://github.com/butthtio/solidity-cot-auditor" target="_blank" rel="noopener">butthtio/solidity-cot-auditor</a>
         <div class="card-meta">
-          <span class="stars">★ 442</span>
+          <span class="stars">★ 448</span>
+          
           <span class="lang">Python</span>
           <span class="license">NOASSERTION</span>
         </div>
@@ -876,15 +385,29 @@
       </div>
     </div>
     <div class="card ">
+      <div class="card-rank">7</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/joshawome/chainreason" target="_blank" rel="noopener">joshawome/chainreason</a>
+        <div class="card-meta">
+          <span class="stars">★ 447</span>
+          
+          <span class="lang">Python</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">이더리움 및 DeFi 작업에 대한 LLM 추론을 평가하기 위한 벤치마크</p>
+      </div>
+    </div>
+    <div class="card ">
       <div class="card-rank">8</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/fendouai/CodexSaver" target="_blank" rel="noopener">fendouai/CodexSaver</a>
+        <a class="card-name" href="https://github.com/chorus-codes/chorus" target="_blank" rel="noopener">chorus-codes/chorus</a>
         <div class="card-meta">
-          <span class="stars">★ 397</span>
-          <span class="lang">Python</span>
+          <span class="stars">★ 380</span>
           
+          <span class="lang">TypeScript</span>
+          <span class="license">Apache-2.0</span>
         </div>
-        <p class="card-desc">DeepSeek으로 코덱스를 더 멍청하게 만들지 않고도 더 저렴하게 만들 수 있습니다.</p>
+        <p class="card-desc">코드 결정을 위한 다중 LLM 피어 검토. 자신의 CLI를 가져오십시오. 코러스는 2-4명의 다른 LLM을 소집하여 배송 전에 작업을 검토합니다.</p>
       </div>
     </div>
     <div class="card ">
@@ -892,7 +415,8 @@
       <div class="card-body">
         <a class="card-name" href="https://github.com/jmerelnyc/Photo-agents" target="_blank" rel="noopener">jmerelnyc/Photo-agents</a>
         <div class="card-meta">
-          <span class="stars">★ 366</span>
+          <span class="stars">★ 368</span>
+          
           <span class="lang">Python</span>
           <span class="license">MIT</span>
         </div>
@@ -902,257 +426,278 @@
     <div class="card ">
       <div class="card-rank">10</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/huggingface/nanowhale" target="_blank" rel="noopener">huggingface/nanowhale</a>
+        <a class="card-name" href="https://github.com/Mininglamp-AI/cider" target="_blank" rel="noopener">Mininglamp-AI/cider</a>
         <div class="card-meta">
-          <span class="stars">★ 326</span>
+          <span class="stars">★ 321</span>
+          
+          <span class="lang">Python</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">Apple Silicon에 대한 W8A8/W4A8 추론 — MLX 사용자 정의 프리미티브로 구축된 1.2-1.9배 빠른 LLM 프리필을 위해 M5에서 사용되지 않은 INT8 TensorOps 잠금 해제.</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-panel" id="tab-web">
+    <div class="card top3">
+      <div class="card-rank">1</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/nexu-io/open-design" target="_blank" rel="noopener">nexu-io/open-design</a>
+        <div class="card-meta">
+          <span class="stars">★ 36,430</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">Apache-2.0</span>
+        </div>
+        <p class="card-desc">🎨 Anthropic의 Claude Design에 대한 로컬 우선 오픈 소스 대안. ⚡ 19 기술 · ✨ 71 브랜드 등급 디자인 시스템 웹 · 데스크톱 · 모바일 프로토타입 · 슬라이드 · 이미지 · 비디오 · 하이퍼 프레임 📦 샌드 박스 미리보기 · HTML/PDF/PPTX/MP4 내보내기 🖼 생성 Claude Code/Codex/Cursor/Gemini/OpenCode/Qwen/Copilot/Hermes/Kimi CLI에서 🤖 실행됩니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">2</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/t8y2/dbx" target="_blank" rel="noopener">t8y2/dbx</a>
+        <div class="card-meta">
+          <span class="stars">★ 1,255</span>
+          
+          <span class="lang">Vue</span>
+          <span class="license">AGPL-3.0</span>
+        </div>
+        <p class="card-desc">15MB, 경량, 크로스 플랫폼 데이터베이스 클라이언트. MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server 등을 지원합니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">3</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/beenuar/AiSOC" target="_blank" rel="noopener">beenuar/AiSOC</a>
+        <div class="card-meta">
+          <span class="stars">★ 401</span>
+          
+          <span class="lang">Python</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">오픈 소스 AI 기반 보안 운영 센터 — 경보 융합, 자주색 팀 훈련, 상담원 지원 분류, MITRE ATT&amp;CK 조사. MIT 면허가 있고 자가 호스팅이 가능합니다.</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">4</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/Julpygo/Claude-Code-AI-Design" target="_blank" rel="noopener">Julpygo/Claude-Code-AI-Design</a>
+        <div class="card-meta">
+          <span class="stars">★ 252</span>
+          
+          <span class="lang">C++</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">Claude Design Anthropic Tool 2026년 4월 다운로드 Figma to Code AI Agent Research Preview Claude Code CLI Integration React 19 Tailwind v4 Support Model Context Protocol MCP Server Setup Design Systems Automation UI UX Prototyping Next.js Component Generation Best Developer Tools 2026 무료 튜토리얼</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">5</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/cclank/cell-architecture-studio" target="_blank" rel="noopener">cclank/cell-architecture-studio</a>
+        <div class="card-meta">
+          <span class="stars">★ 227</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">React 및 Three.js로 구축된 대화형 3D 셀 아키텍처 갤러리</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">6</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/endless-sky-team/ai-trading-agent" target="_blank" rel="noopener">endless-sky-team/ai-trading-agent</a>
+        <div class="card-meta">
+          <span class="stars">★ 201</span>
+          
+          <span class="lang">TypeScript</span>
+          
+        </div>
+        <p class="card-desc">llm trading bot ai agent crypto bitcoin ethereum perpetuals openrouter lighter algorithmic automated quant typescript react postgres bun fintech defi machine-learning open-source crypto-bot signals</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">7</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/EryouHao/zano" target="_blank" rel="noopener">EryouHao/zano</a>
+        <div class="card-meta">
+          <span class="stars">★ 180</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">인간과 인공지능 에이전트가 공유 채널에서 협력하는 협업 공간</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">8</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/Jakubantalik/metal-fx" target="_blank" rel="noopener">Jakubantalik/metal-fx</a>
+        <div class="card-meta">
+          <span class="stars">★ 159</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">React 버튼 및 UI 구성 요소에 대한 애니메이션 WebGL 액체 금속 효과</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">9</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/adrianhajdin/ghost-ai" target="_blank" rel="noopener">adrianhajdin/ghost-ai</a>
+        <div class="card-meta">
+          <span class="stars">★ 121</span>
+          
+          <span class="lang">JavaScript</span>
+          
+        </div>
+        <p class="card-desc">Ghost AI는 대화형 시스템 아키텍처 빌더입니다.</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">10</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/orneryd/uiGrid" target="_blank" rel="noopener">orneryd/uiGrid</a>
+        <div class="card-meta">
+          <span class="stars">★ 101</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">최신 멀티 플랫폼 데이터그리드. 오리지널 angularjs ui-grid의 리마스터. 이제 녹 eGui, Angular 21 +, REACT 18 + 및 바닐라 웹 구성 요소를 위해 제작되었습니다.</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-panel" id="tab-tool">
+    <div class="card top3">
+      <div class="card-rank">1</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/nexu-io/open-design" target="_blank" rel="noopener">nexu-io/open-design</a>
+        <div class="card-meta">
+          <span class="stars">★ 36,430</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">Apache-2.0</span>
+        </div>
+        <p class="card-desc">🎨 Anthropic의 Claude Design에 대한 로컬 우선 오픈 소스 대안. ⚡ 19 기술 · ✨ 71 브랜드 등급 디자인 시스템 웹 · 데스크톱 · 모바일 프로토타입 · 슬라이드 · 이미지 · 비디오 · 하이퍼 프레임 📦 샌드 박스 미리보기 · HTML/PDF/PPTX/MP4 내보내기 🖼 생성 Claude Code/Codex/Cursor/Gemini/OpenCode/Qwen/Copilot/Hermes/Kimi CLI에서 🤖 실행됩니다.</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">2</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/crafter-station/petdex" target="_blank" rel="noopener">crafter-station/petdex</a>
+        <div class="card-meta">
+          <span class="stars">★ 1,372</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">Codex, Claude Code, OpenCode y Gemini CLI용 애니메이션 PET 공개 갤러리</p>
+      </div>
+    </div>
+    <div class="card top3">
+      <div class="card-rank">3</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/MayersScott/rkn-block-checker" target="_blank" rel="noopener">MayersScott/rkn-block-checker</a>
+        <div class="card-meta">
+          <span class="stars">★ 1,062</span>
+          
+          <span class="lang">Python</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">레이어별 RKN/TSPU 인터넷 블록 진단 (DNS, TCP, TLS, HTTP)</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">4</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/tddworks/baguette" target="_blank" rel="noopener">tddworks/baguette</a>
+        <div class="card-meta">
+          <span class="stars">★ 845</span>
+          
+          <span class="lang">Swift</span>
+          <span class="license">Apache-2.0</span>
+        </div>
+        <p class="card-desc">헤드리스 iOS 시뮬레이터 관리자/팜 + iOS 26용 호스트 측 입력 주입 — 탭, 스와이프, 멀티 핑거 제스처 및 60fps 스트리밍</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">5</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/WenyuChiou/awesome-agentic-ai-zh" target="_blank" rel="noopener">WenyuChiou/awesome-agentic-ai-zh</a>
+        <div class="card-meta">
+          <span class="stars">★ 763</span>
+          
+          <span class="lang">Python</span>
+          <span class="license">MIT</span>
+        </div>
+        <p class="card-desc">AI Agent 中文學習地圖 — 從零開始的結構化學習路徑中 文每階段有必做練習跟必修閱讀。三語對照 （繁中 ／简中 ／ 日 本 語 ）。歡迎社群一起貢獻、優化內容。</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">6</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/val1813/kwcode" target="_blank" rel="noopener">val1813/kwcode</a>
+        <div class="card-meta">
+          <span class="stars">★ 587</span>
+          
           <span class="lang">Python</span>
           
+        </div>
+        <p class="card-desc">一个能持续增强本地开源模型的cli ，专门为本地部署模型优化的 coding窗口。目前仍然处于 mvp未能大规模测试和端到端跑通 ，欢迎指正🙏🏻🙏🏻🙏🏻</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">7</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/openai/openai-cli" target="_blank" rel="noopener">openai/openai-cli</a>
+        <div class="card-meta">
+          <span class="stars">★ 554</span>
+          
+          <span class="lang">Go</span>
+          <span class="license">Apache-2.0</span>
+        </div>
+        <p class="card-desc">OpenAI API용 공식 CLI</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-rank">8</div>
+      <div class="card-body">
+        <a class="card-name" href="https://github.com/lessweb/deepcode-cli" target="_blank" rel="noopener">lessweb/deepcode-cli</a>
+        <div class="card-meta">
+          <span class="stars">★ 495</span>
+          
+          <span class="lang">TypeScript</span>
+          <span class="license">MIT</span>
         </div>
         <p class="card-desc">설명 없음</p>
       </div>
     </div>
-  </div>
-  <div class="tab-panel" id="tab-rust">
-    <div class="card top3">
-      <div class="card-rank">1</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/PentHertz/LUKSbox" target="_blank" rel="noopener">PentHertz/LUKSbox</a>
-        <div class="card-meta">
-          <span class="stars">★ 401</span>
-          <span class="lang">Rust</span>
-          <span class="license">Apache-2.0</span>
-        </div>
-        <p class="card-desc">민감한 파일은 호스트를 신뢰하지 않고 클라우드나 공유 미디어에 저장하세요. LUKSbox는 암호, FIDO2 (YubiKey, Titan, Nitrokey, Windows Hello), TPM 2.0 및 하이브리드 양자 후 (ML-KEM-768/1024) 키 슬롯이 있는 Rust 기반 암호화 컨테이너 도구입니다. Linux, macOS 및 Windows에서 실제 드라이브로 마운트됩니다.</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">2</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/Avarok-Cybersecurity/atlas" target="_blank" rel="noopener">Avarok-Cybersecurity/atlas</a>
-        <div class="card-meta">
-          <span class="stars">★ 225</span>
-          <span class="lang">Rust</span>
-          <span class="license">AGPL-3.0</span>
-        </div>
-        <p class="card-desc">순수한 녹 추론 엔진</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/chojs23/concord" target="_blank" rel="noopener">chojs23/concord</a>
-        <div class="card-meta">
-          <span class="stars">★ 216</span>
-          <span class="lang">Rust</span>
-          <span class="license">GPL-3.0</span>
-        </div>
-        <p class="card-desc">Discord를 위한 풍부한 기능의 터미널 클라이언트</p>
-      </div>
-    </div>
     <div class="card ">
-      <div class="card-rank">4</div>
+      <div class="card-rank">9</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/wojtczyk/trust" target="_blank" rel="noopener">wojtczyk/trust</a>
+        <a class="card-name" href="https://github.com/b3-fun/b3os" target="_blank" rel="noopener">b3-fun/b3os</a>
         <div class="card-meta">
-          <span class="stars">★ 197</span>
-          <span class="lang">Rust</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">신뢰 – 1989년과 같은 러스트 코딩</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/reakjra/omikuji" target="_blank" rel="noopener">reakjra/omikuji</a>
-        <div class="card-meta">
-          <span class="stars">★ 171</span>
-          <span class="lang">Rust</span>
-          <span class="license">GPL-3.0</span>
-        </div>
-        <p class="card-desc">Linux용 Qt/QML 기반 게임 런처</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/ThatXliner/rust-but-lisp" target="_blank" rel="noopener">ThatXliner/rust-but-lisp</a>
-        <div class="card-meta">
-          <span class="stars">★ 106</span>
-          <span class="lang">Rust</span>
+          <span class="stars">★ 429</span>
           
-        </div>
-        <p class="card-desc">Rust but LISP</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/DeepSeek-TUI/DeepSeek-TUI" target="_blank" rel="noopener">DeepSeek-TUI/DeepSeek-TUI</a>
-        <div class="card-meta">
-          <span class="stars">★ 104</span>
-          <span class="lang">Rust</span>
-          <span class="license">Apache-2.0</span>
-        </div>
-        <p class="card-desc">터미널에서 실행되는 DeepSeek 모델용 DeepSeek TUI - 코딩 에이전트를 설치합니다.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/liguan-89/deecodex" target="_blank" rel="noopener">liguan-89/deecodex</a>
-        <div class="card-meta">
-          <span class="stars">★ 89</span>
-          <span class="lang">Rust</span>
+          <span class="lang">TypeScript</span>
           <span class="license">MIT</span>
         </div>
-        <p class="card-desc">DeepSeek API → Codex CLI 兼容代理（ 응답 API 翻译 + 思考模式 + 工具调用 + MiniMax 视觉路由）</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/chrismoos/1xbts" target="_blank" rel="noopener">chrismoos/1xbts</a>
-        <div class="card-meta">
-          <span class="stars">★ 88</span>
-          <span class="lang">Rust</span>
-          <span class="license">Apache-2.0</span>
-        </div>
-        <p class="card-desc">CDMA2000 오픈 소스 셀룰러 네트워크</p>
+        <p class="card-desc">B3OS는 크로스 체인 워크플로우를 위한 자동화 플랫폼입니다. 자동화된 전략을 수립하고, 트랜잭션을 예약하고, 복잡한 온체인 운영을 실행합니다.</p>
       </div>
     </div>
     <div class="card ">
       <div class="card-rank">10</div>
       <div class="card-body">
-        <a class="card-name" href="https://github.com/beava-dev/beava" target="_blank" rel="noopener">beava-dev/beava</a>
+        <a class="card-name" href="https://github.com/chorus-codes/chorus" target="_blank" rel="noopener">chorus-codes/chorus</a>
         <div class="card-meta">
-          <span class="stars">★ 85</span>
-          <span class="lang">Rust</span>
+          <span class="stars">★ 380</span>
+          
+          <span class="lang">TypeScript</span>
           <span class="license">Apache-2.0</span>
         </div>
-        <p class="card-desc">사기, 광고 기술 및 행동 분석을 위한 실시간 기능 서버.</p>
-      </div>
-    </div>
-  </div>
-  <div class="tab-panel" id="tab-go">
-    <div class="card top3">
-      <div class="card-rank">1</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/ThisIsDara/mhr-cfw-go" target="_blank" rel="noopener">ThisIsDara/mhr-cfw-go</a>
-        <div class="card-meta">
-          <span class="stars">★ 366</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">컴퓨터에서 실행되고 Google을 통해 트래픽을 전달하는 로컬 프록시입니다.</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">2</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/ajavadinezhad/zyrln" target="_blank" rel="noopener">ajavadinezhad/zyrln</a>
-        <div class="card-meta">
-          <span class="stars">★ 356</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">DPI 기반 검열, Android VPN 앱 + 데스크톱 프록시를 우회하기 위해 Google 인프라를 통해 트래픽을 라우팅하는 도메인 프론팅 릴레이</p>
-      </div>
-    </div>
-    <div class="card top3">
-      <div class="card-rank">3</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/gofsnotify/fsnotify" target="_blank" rel="noopener">gofsnotify/fsnotify</a>
-        <div class="card-meta">
-          <span class="stars">★ 181</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Go에 대한 교차 플랫폼 파일 시스템 알림.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">4</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/MiChongs/karpov-gateway" target="_blank" rel="noopener">MiChongs/karpov-gateway</a>
-        <div class="card-meta">
-          <span class="stars">★ 99</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Karpov 게이트웨이 — REST API 게이트웨이 + Next.js 콘솔. Go (Gin + gRPC) + PostgreSQL + Redis + OAuth2 (Linux.do) + TOTP 2FA + 암호화된 자격 증명 풀</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">5</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/nyarime/gho" target="_blank" rel="noopener">nyarime/gho</a>
-        <div class="card-meta">
-          <span class="stars">★ 82</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Pure Go Norton Ghost GHO 디스크 이미지 파서 — CGo 없음, 단일 바이너리</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">6</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/usewhale/whale" target="_blank" rel="noopener">usewhale/whale</a>
-        <div class="card-meta">
-          <span class="stars">★ 73</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">MCP, 기술, 셸 도구 및 접두사 캐시 최적화를 갖춘 DeepSeek CLI/터미널 코딩 에이전트.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">7</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/openclaw/clickclack" target="_blank" rel="noopener">openclaw/clickclack</a>
-        <div class="card-meta">
-          <span class="stars">★ 58</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">ClickClackClaw - 발톱이 있는 채팅 앱.</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">8</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/rudrankriyam/Google-Health-CLI" target="_blank" rel="noopener">rudrankriyam/Google-Health-CLI</a>
-        <div class="card-meta">
-          <span class="stars">★ 52</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Go로 작성된 Google Health API용 비공식 Google-Health-CLI</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">9</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/tidwall/btype" target="_blank" rel="noopener">tidwall/btype</a>
-        <div class="card-meta">
-          <span class="stars">★ 51</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">Go용 B-트리 기반 컬렉션 유형</p>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-rank">10</div>
-      <div class="card-body">
-        <a class="card-name" href="https://github.com/compozy/skeeper" target="_blank" rel="noopener">compozy/skeeper</a>
-        <div class="card-meta">
-          <span class="stars">★ 46</span>
-          <span class="lang">Go</span>
-          <span class="license">MIT</span>
-        </div>
-        <p class="card-desc">주요 PR을 오염시키지 않고 사이드카 Git 저장소에서 PRD, 기술 사양, ADR, AI 계획과 같은 사양 아티팩트를 버전업합니다.</p>
+        <p class="card-desc">코드 결정을 위한 다중 LLM 피어 검토. 자신의 CLI를 가져오십시오. 코러스는 2-4명의 다른 LLM을 소집하여 배송 전에 작업을 검토합니다.</p>
       </div>
     </div>
   </div>
@@ -1192,14 +737,10 @@
         if (!mRes.ok) return;
         const manifest = await mRes.json();
         const weeks = manifest.weeks.slice(-12);
-
-        const weekData = await Promise.all(
-          weeks.map(w => fetch("./data/" + w + ".json").then(r => r.json()).catch(() => null))
-        );
+        const weekData = await Promise.all(weeks.map(w => fetch("./data/" + w + ".json").then(r => r.json()).catch(() => null)));
         const valid = weekData.filter(Boolean);
         if (valid.length === 0) return;
 
-        // 언어 차트
         const allLangs = [...new Set(valid.flatMap(d => Object.keys(d.stats.topLanguages)))];
         const topLangs = allLangs
           .map(l => ({ lang: l, total: valid.reduce((s, d) => s + (d.stats.topLanguages[l] || 0), 0) }))
@@ -1211,10 +752,8 @@
           data: {
             labels: valid.map(d => d.week),
             datasets: topLangs.map((lang, i) => ({
-              label: lang,
-              data: valid.map(d => d.stats.topLanguages[lang] || 0),
-              borderColor: COLORS[i], backgroundColor: COLORS[i] + "22",
-              tension: 0.3, fill: false,
+              label: lang, data: valid.map(d => d.stats.topLanguages[lang] || 0),
+              borderColor: COLORS[i], backgroundColor: COLORS[i] + "22", tension: 0.3, fill: false,
             })),
           },
           options: {
@@ -1227,7 +766,6 @@
           },
         });
 
-        // 카테고리 차트 (최신 주)
         const latest = valid[valid.length - 1];
         const catKeys = Object.keys(latest.stats.categoryCount);
         document.getElementById("cat-loading").style.display = "none";
@@ -1246,9 +784,7 @@
             },
           },
         });
-      } catch (e) {
-        console.error("트렌드 로드 실패:", e);
-      }
+      } catch (e) { console.error("트렌드 로드 실패:", e); }
     }
 
     loadTrends();
