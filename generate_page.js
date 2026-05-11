@@ -6,30 +6,115 @@ const fs = require("fs");
 const path = require("path");
 
 const TOKEN = process.env.GITHUB_TOKEN;
-if (!TOKEN) {
-  console.error("오류: GITHUB_TOKEN 환경변수를 설정해주세요.");
-  process.exit(1);
-}
+if (!TOKEN) { console.error("오류: GITHUB_TOKEN 환경변수를 설정해주세요."); process.exit(1); }
+
+const SINCE = "weekly";
 
 const CATEGORIES = {
-  all:    { label: "전체",        extra: "",                                                                                          minStars: 10 },
-  ai:     { label: "AI/ML",      extra: "llm OR \"machine learning\" OR transformer OR \"neural network\" OR \"large language\"",    minStars: 5  },
-  web:    { label: "웹",          extra: "react OR nextjs OR vue OR svelte OR frontend OR tailwind",                                  minStars: 5  },
-  tool:   { label: "도구",        extra: "cli OR devtools OR automation OR productivity OR \"developer tool\"",                       minStars: 5  },
-  js:     { label: "JavaScript",  extra: "language:javascript",                                                                       minStars: 5  },
-  ts:     { label: "TypeScript",  extra: "language:typescript",                                                                       minStars: 5  },
-  python: { label: "Python",      extra: "language:python",                                                                           minStars: 5  },
-  rust:   { label: "Rust",        extra: "language:rust",                                                                             minStars: 3  },
-  go:     { label: "Go",          extra: "language:go",                                                                               minStars: 3  },
+  all:    { label: "전체",       type: "scrape", lang: "" },
+  js:     { label: "JavaScript", type: "scrape", lang: "javascript" },
+  ts:     { label: "TypeScript", type: "scrape", lang: "typescript" },
+  python: { label: "Python",     type: "scrape", lang: "python" },
+  rust:   { label: "Rust",       type: "scrape", lang: "rust" },
+  go:     { label: "Go",         type: "scrape", lang: "go" },
+  ai:     { label: "AI/ML",     type: "search", extra: "llm OR \"machine learning\" OR \"large language model\" OR transformer", minStars: 10 },
+  web:    { label: "웹",         type: "search", extra: "react OR nextjs OR vue OR svelte OR tailwind OR frontend", minStars: 10 },
+  tool:   { label: "도구",       type: "search", extra: "cli OR devtools OR automation OR \"developer tool\" OR productivity", minStars: 10 },
 };
 
-function getWeekId(date = new Date()) {
-  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-  const dayNum = d.getUTCDay() || 7;
-  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-  const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-  return `${d.getUTCFullYear()}-W${String(weekNo).padStart(2, "0")}`;
+// ── HTTP helpers ──────────────────────────────────────────────────────────────
+
+function httpGet(hostname, reqPath, headers = {}) {
+  return new Promise((resolve, reject) => {
+    https.get({ hostname, path: reqPath, headers }, (res) => {
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        const loc = new URL(res.headers.location, `https://${hostname}`);
+        return resolve(httpGet(loc.hostname, loc.pathname + loc.search, headers));
+      }
+      let body = "";
+      res.on("data", c => body += c);
+      res.on("end", () => resolve({ status: res.statusCode, body }));
+    }).on("error", reject);
+  });
+}
+
+// ── GitHub Trending scraper ───────────────────────────────────────────────────
+
+function decodeEntities(str) {
+  return str
+    .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&apos;/g, "'");
+}
+function stripTags(str) { return str.replace(/<[^>]+>/g, "").trim(); }
+function parseNum(str) { return parseInt((str || "").replace(/,/g, "")) || 0; }
+
+function parseTrendingHTML(html) {
+  const repos = [];
+  const blocks = html.split("<article ");
+
+  for (let i = 1; i < blocks.length; i++) {
+    const b = blocks[i];
+
+    const nameMatch = b.match(/href="\/([\w.-]+\/[\w.-]+)"\s*>/);
+    if (!nameMatch) continue;
+    const full_name = nameMatch[1];
+
+    let description = null;
+    const descMatch = b.match(/col-9[^"]*"[^>]*>([\s\S]*?)<\/p>/);
+    if (descMatch) description = decodeEntities(stripTags(descMatch[1])).replace(/\s+/g, " ").trim() || null;
+
+    let language = null;
+    const langMatch = b.match(/itemprop="programmingLanguage"[^>]*>(.*?)<\/span>/);
+    if (langMatch) language = stripTags(langMatch[1]).trim() || null;
+
+    let stargazers_count = 0;
+    const starsMatch = b.match(/href="\/[\w.-]+\/[\w.-]+\/stargazers"[\s\S]*?([\d,]+)\s*<\/a>/);
+    if (starsMatch) stargazers_count = parseNum(starsMatch[1]);
+
+    let forks_count = 0;
+    const forksMatch = b.match(/href="\/[\w.-]+\/[\w.-]+\/forks"[\s\S]*?([\d,]+)\s*<\/a>/);
+    if (forksMatch) forks_count = parseNum(forksMatch[1]);
+
+    let stars_gained = 0;
+    const gainedMatch = b.match(/([\d,]+)\s+stars?\s+this\s+(?:week|day)/i);
+    if (gainedMatch) stars_gained = parseNum(gainedMatch[1]);
+
+    repos.push({ full_name, html_url: `https://github.com/${full_name}`, description, language, stargazers_count, forks_count, stars_gained, license: null });
+  }
+  return repos.slice(0, 25);
+}
+
+async function fetchTrending(lang = "") {
+  const langPath = lang ? `/${encodeURIComponent(lang)}` : "";
+  const { status, body } = await httpGet("github.com", `/trending${langPath}?since=${SINCE}`, {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml",
+    "Accept-Language": "en-US,en;q=0.9",
+  });
+  if (status !== 200) throw new Error(`Trending 페이지 오류 ${status} (lang=${lang})`);
+  return parseTrendingHTML(body).slice(0, 10);
+}
+
+// ── GitHub API search ─────────────────────────────────────────────────────────
+
+function githubSearch(query) {
+  const params = new URLSearchParams({ q: query, sort: "stars", order: "desc", per_page: "20" });
+  return new Promise((resolve, reject) => {
+    https.get({
+      hostname: "api.github.com",
+      path: `/search/repositories?${params}`,
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "github-trending-cli/1.0",
+      },
+    }, (res) => {
+      let body = "";
+      res.on("data", c => body += c);
+      res.on("end", () => res.statusCode === 200 ? resolve(JSON.parse(body)) : reject(new Error(`API ${res.statusCode}: ${body}`)));
+    }).on("error", reject);
+  });
 }
 
 function isSpam(repo) {
@@ -38,46 +123,25 @@ function isSpam(repo) {
   const words = desc.toLowerCase().split(/\s+/).filter(w => w.length > 3);
   const freq = {};
   for (const w of words) freq[w] = (freq[w] || 0) + 1;
-  const maxRepeat = words.length > 0 ? Math.max(...Object.values(freq)) : 0;
-  return maxRepeat >= 4;
+  return words.length > 0 && Math.max(...Object.values(freq)) >= 4;
 }
 
-function githubFetch(query) {
-  const params = new URLSearchParams({ q: query, sort: "stars", order: "desc", per_page: "20" });
-  const options = {
-    hostname: "api.github.com",
-    path: `/search/repositories?${params}`,
-    headers: {
-      Authorization: `Bearer ${TOKEN}`,
-      Accept: "application/vnd.github+json",
-      "X-GitHub-Api-Version": "2022-11-28",
-      "User-Agent": "github-trending-cli/1.0",
-    },
-  };
-  return new Promise((resolve, reject) => {
-    https.get(options, (res) => {
-      let body = "";
-      res.on("data", (c) => (body += c));
-      res.on("end", () => res.statusCode === 200 ? resolve(JSON.parse(body)) : reject(new Error(`HTTP ${res.statusCode}: ${body}`)));
-    }).on("error", reject);
-  });
-}
+// ── Translation ───────────────────────────────────────────────────────────────
 
 function translateOne(text) {
+  if (!text) return Promise.resolve(null);
   const params = new URLSearchParams({ q: text, langpair: "en|ko" });
-  const options = {
-    hostname: "api.mymemory.translated.net",
-    path: `/get?${params}`,
-    headers: { "User-Agent": "github-trending-cli/1.0" },
-  };
   return new Promise((resolve) => {
-    https.get(options, (res) => {
+    https.get({
+      hostname: "api.mymemory.translated.net",
+      path: `/get?${params}`,
+      headers: { "User-Agent": "github-trending-cli/1.0" },
+    }, (res) => {
       let body = "";
-      res.on("data", (c) => (body += c));
+      res.on("data", c => body += c);
       res.on("end", () => {
         try {
-          const json = JSON.parse(body);
-          const t = json?.responseData?.translatedText;
+          const t = JSON.parse(body)?.responseData?.translatedText;
           resolve(t && t !== text ? t : text);
         } catch { resolve(text); }
       });
@@ -85,55 +149,62 @@ function translateOne(text) {
   });
 }
 
+// ── Category fetcher ──────────────────────────────────────────────────────────
+
 async function fetchCategory(key, cat) {
-  const weekAgo = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
-  const minStars = cat.minStars ?? 5;
-  const baseQuery = `created:>=${weekAgo} stars:>=${minStars}`;
-  const query = cat.extra ? `${baseQuery} ${cat.extra}` : baseQuery;
+  let repos;
 
-  const data = await githubFetch(query);
-  const items = (data.items ?? []).filter(r => !isSpam(r));
-  const top10 = items.slice(0, 10);
+  if (cat.type === "scrape") {
+    repos = await fetchTrending(cat.lang);
+  } else {
+    const weekAgo = new Date(Date.now() - 14 * 86400000).toISOString().slice(0, 10);
+    const data = await githubSearch(`created:>=${weekAgo} stars:>=${cat.minStars} ${cat.extra}`);
+    repos = (data.items ?? []).filter(r => !isSpam(r)).slice(0, 10).map(r => ({
+      full_name: r.full_name,
+      html_url: r.html_url,
+      description: r.description,
+      language: r.language,
+      stargazers_count: r.stargazers_count,
+      forks_count: r.forks_count,
+      stars_gained: null,
+      license: r.license?.spdx_id ?? null,
+    }));
+  }
 
-  const translated = await Promise.all(
-    top10.map((r) => r.description ? translateOne(r.description) : Promise.resolve(null))
-  );
-
-  return top10.map((r, i) => ({
-    full_name: r.full_name,
-    html_url: r.html_url,
-    description: r.description,
-    descKo: translated[i],
-    language: r.language,
-    stargazers_count: r.stargazers_count,
-    forks_count: r.forks_count,
-    license: r.license?.spdx_id ?? null,
-  }));
+  const translations = await Promise.all(repos.map(r => translateOne(r.description)));
+  return repos.map((r, i) => ({ ...r, descKo: translations[i] }));
 }
 
+// ── Stats ─────────────────────────────────────────────────────────────────────
+
 function computeStats(allData) {
-  const languages = {};
+  const topLanguages = {};
   for (const repo of (allData.all ?? [])) {
-    if (repo.language) languages[repo.language] = (languages[repo.language] || 0) + 1;
+    if (repo.language) topLanguages[repo.language] = (topLanguages[repo.language] || 0) + 1;
   }
   const categoryCount = {};
   for (const [key, repos] of Object.entries(allData)) {
     if (key !== "all") categoryCount[key] = repos.length;
   }
-  return { topLanguages: languages, categoryCount };
+  return { topLanguages, categoryCount };
 }
+
+// ── HTML builder ──────────────────────────────────────────────────────────────
 
 function escapeHtml(str) {
   return (str ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
 function repoCard(repo, rank) {
-  const name = escapeHtml(repo.full_name);
-  const stars = repo.stargazers_count.toLocaleString();
-  const desc = escapeHtml(repo.descKo ?? repo.description ?? "설명 없음");
-  const lang = escapeHtml(repo.language ?? "");
-  const url = escapeHtml(repo.html_url);
+  const name    = escapeHtml(repo.full_name);
+  const url     = escapeHtml(repo.html_url);
+  const stars   = repo.stargazers_count.toLocaleString();
+  const desc    = escapeHtml(repo.descKo ?? repo.description ?? "설명 없음");
+  const lang    = escapeHtml(repo.language ?? "");
   const license = repo.license ? `<span class="license">${escapeHtml(repo.license)}</span>` : "";
+  const gained  = repo.stars_gained > 0
+    ? `<span class="gained">▲ ${repo.stars_gained.toLocaleString()} this ${SINCE}</span>`
+    : "";
   const rankClass = rank <= 3 ? "top3" : "";
 
   return `
@@ -143,6 +214,7 @@ function repoCard(repo, rank) {
         <a class="card-name" href="${url}" target="_blank" rel="noopener">${name}</a>
         <div class="card-meta">
           <span class="stars">★ ${stars}</span>
+          ${gained}
           ${lang ? `<span class="lang">${lang}</span>` : ""}
           ${license}
         </div>
@@ -193,6 +265,7 @@ function buildHtml(allData, generatedAt) {
     .card-name:hover { text-decoration: underline; }
     .card-meta { display: flex; align-items: center; gap: .8rem; margin: .3rem 0; flex-wrap: wrap; }
     .stars { color: #e3b341; font-size: .85rem; font-weight: 600; }
+    .gained { color: #3fb950; font-size: .82rem; font-weight: 600; }
     .lang { background: #21262d; border: 1px solid #30363d; color: #8b949e; font-size: .75rem; padding: .15rem .5rem; border-radius: 4px; }
     .license { background: #1c2d3f; border: 1px solid #1f6feb44; color: #58a6ff; font-size: .72rem; padding: .15rem .5rem; border-radius: 4px; }
     .card-desc { color: #8b949e; font-size: .88rem; line-height: 1.5; }
@@ -252,14 +325,10 @@ function buildHtml(allData, generatedAt) {
         if (!mRes.ok) return;
         const manifest = await mRes.json();
         const weeks = manifest.weeks.slice(-12);
-
-        const weekData = await Promise.all(
-          weeks.map(w => fetch("./data/" + w + ".json").then(r => r.json()).catch(() => null))
-        );
+        const weekData = await Promise.all(weeks.map(w => fetch("./data/" + w + ".json").then(r => r.json()).catch(() => null)));
         const valid = weekData.filter(Boolean);
         if (valid.length === 0) return;
 
-        // 언어 차트
         const allLangs = [...new Set(valid.flatMap(d => Object.keys(d.stats.topLanguages)))];
         const topLangs = allLangs
           .map(l => ({ lang: l, total: valid.reduce((s, d) => s + (d.stats.topLanguages[l] || 0), 0) }))
@@ -271,10 +340,8 @@ function buildHtml(allData, generatedAt) {
           data: {
             labels: valid.map(d => d.week),
             datasets: topLangs.map((lang, i) => ({
-              label: lang,
-              data: valid.map(d => d.stats.topLanguages[lang] || 0),
-              borderColor: COLORS[i], backgroundColor: COLORS[i] + "22",
-              tension: 0.3, fill: false,
+              label: lang, data: valid.map(d => d.stats.topLanguages[lang] || 0),
+              borderColor: COLORS[i], backgroundColor: COLORS[i] + "22", tension: 0.3, fill: false,
             })),
           },
           options: {
@@ -287,7 +354,6 @@ function buildHtml(allData, generatedAt) {
           },
         });
 
-        // 카테고리 차트 (최신 주)
         const latest = valid[valid.length - 1];
         const catKeys = Object.keys(latest.stats.categoryCount);
         document.getElementById("cat-loading").style.display = "none";
@@ -306,9 +372,7 @@ function buildHtml(allData, generatedAt) {
             },
           },
         });
-      } catch (e) {
-        console.error("트렌드 로드 실패:", e);
-      }
+      } catch (e) { console.error("트렌드 로드 실패:", e); }
     }
 
     loadTrends();
@@ -316,6 +380,19 @@ function buildHtml(allData, generatedAt) {
 </body>
 </html>`;
 }
+
+// ── Week ID ───────────────────────────────────────────────────────────────────
+
+function getWeekId(date = new Date()) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return `${d.getUTCFullYear()}-W${String(weekNo).padStart(2, "0")}`;
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
   const docsDir = path.join(__dirname, "docs");
@@ -325,9 +402,14 @@ async function main() {
 
   const allData = {};
   for (const [key, cat] of Object.entries(CATEGORIES)) {
-    process.stdout.write(`[${key}] 조회 + 번역 중...\n`);
-    allData[key] = await fetchCategory(key, cat);
-    await new Promise((r) => setTimeout(r, 1000));
+    process.stdout.write(`[${key}] 조회 중...\n`);
+    try {
+      allData[key] = await fetchCategory(key, cat);
+    } catch (err) {
+      console.error(`[${key}] 오류: ${err.message}`);
+      allData[key] = [];
+    }
+    await new Promise(r => setTimeout(r, 1500));
   }
 
   const weekId = getWeekId();
@@ -347,4 +429,4 @@ async function main() {
   console.log(`\n✅ 완료: docs/index.html + docs/data/${weekId}.json (${generatedAt})`);
 }
 
-main().catch((err) => { console.error("오류:", err.message); process.exit(1); });
+main().catch(err => { console.error("오류:", err.message); process.exit(1); });

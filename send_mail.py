@@ -52,13 +52,15 @@ def build_html(latest, prev):
         desc = r.get("descKo") or r.get("description") or "설명 없음"
         desc = desc[:80] + ("..." if len(desc) > 80 else "")
         rank_color = "#d29922" if i <= 3 else "#8b949e"
+        gained = r.get("stars_gained") or 0
+        gained_html = f'<br><span style="color:#3fb950;font-size:11px;">▲ {gained:,} this week</span>' if gained > 0 else ""
         repo_rows += f"""<tr>
           <td style="padding:8px 4px;text-align:center;color:{rank_color};font-weight:800;">{i}</td>
           <td style="padding:8px;">
             <a href="{url}" style="color:#58a6ff;text-decoration:none;font-weight:600;">{name}</a><br>
             <span style="color:#8b949e;font-size:12px;">{desc}</span>
           </td>
-          <td style="padding:8px;color:#e3b341;font-size:13px;white-space:nowrap;">★ {stars}</td>
+          <td style="padding:8px;color:#e3b341;font-size:13px;white-space:nowrap;">★ {stars}{gained_html}</td>
           <td style="padding:8px;color:#8b949e;font-size:12px;">{lang}</td>
         </tr>"""
 
