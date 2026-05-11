@@ -1,0 +1,945 @@
+{
+  "week": "2026-W20",
+  "generatedAt": "2026-05-11T01:03:57.174Z",
+  "stats": {
+    "topLanguages": {
+      "C": 2,
+      "Zig": 1,
+      "TypeScript": 1,
+      "Shell": 1,
+      "Python": 3,
+      "JavaScript": 1,
+      "HTML": 1
+    },
+    "categoryCount": {
+      "ai": 10,
+      "web": 10,
+      "tool": 10,
+      "js": 10,
+      "ts": 10,
+      "python": 10,
+      "rust": 10,
+      "go": 10
+    }
+  },
+  "repos": {
+    "all": [
+      {
+        "full_name": "antirez/ds4",
+        "html_url": "https://github.com/antirez/ds4",
+        "description": "DeepSeek 4 Flash local inference engine for Metal",
+        "descKo": "금속용 DeepSeek 4 플래시 로컬 추론 엔진",
+        "language": "C",
+        "stargazers_count": 6174,
+        "forks_count": 451,
+        "license": "MIT"
+      },
+      {
+        "full_name": "V4bel/dirtyfrag",
+        "html_url": "https://github.com/V4bel/dirtyfrag",
+        "description": null,
+        "descKo": null,
+        "language": "C",
+        "stargazers_count": 4019,
+        "forks_count": 597,
+        "license": null
+      },
+      {
+        "full_name": "vercel-labs/zero-native",
+        "html_url": "https://github.com/vercel-labs/zero-native",
+        "description": "Build desktop + mobile apps with Zig and web UI",
+        "descKo": "Zig 및 웹 UI로 데스크톱 + 모바일 앱 빌드",
+        "language": "Zig",
+        "stargazers_count": 2301,
+        "forks_count": 98,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "strukto-ai/mirage",
+        "html_url": "https://github.com/strukto-ai/mirage",
+        "description": "A Unified Virtual Filesystem For AI Agents",
+        "descKo": "AI 에이전트를 위한 통합 가상 파일 시스템",
+        "language": "TypeScript",
+        "stargazers_count": 1794,
+        "forks_count": 108,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "XBuilderLAB/cheat-on-content",
+        "html_url": "https://github.com/XBuilderLAB/cheat-on-content",
+        "description": "You're reading this. The skill predicted it. A workflow that turns every post into a calibrated experiment—score, blind-predict, retro, evolve. The future doesn't reward effort, it rewards those who see the pattern first. 1M followers in a month — not luck, system.",
+        "descKo": "이 글을 읽고 계십니다. 스킬이 예견했다. 모든 포스트를 교정된 실험 (점수, 블라인드 예측, 복고, 진화) 으로 전환하는 워크플로우입니다. 미래는 노력을 보상하지 않으며, 패턴을 먼저 보는 사람들에게 보상합니다. 한 달에 1백만 명의 팔로워가 있습니다. 운이 아니라 시스템입니다.",
+        "language": "Shell",
+        "stargazers_count": 1551,
+        "forks_count": 312,
+        "license": "MIT"
+      },
+      {
+        "full_name": "yaojingang/yao-open-prompts",
+        "html_url": "https://github.com/yaojingang/yao-open-prompts",
+        "description": "Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "descKo": "야오 오픈 프롬프트 ：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "language": "Python",
+        "stargazers_count": 1549,
+        "forks_count": 247,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "lightseekorg/tokenspeed",
+        "html_url": "https://github.com/lightseekorg/tokenspeed",
+        "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+        "descKo": "TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.",
+        "language": "Python",
+        "stargazers_count": 904,
+        "forks_count": 64,
+        "license": "MIT"
+      },
+      {
+        "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+        "html_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+        "description": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑，每階段有必做練習跟必修閱讀。三語對照（繁中／简中／English）。歡迎社群一起貢獻、優化內容。",
+        "descKo": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑中 文每階段有必做練習跟必修閱讀。三語對照 （繁中 ／简中 ／ 日 本 語 ）。歡迎社群一起貢獻、優化內容。",
+        "language": "Python",
+        "stargazers_count": 730,
+        "forks_count": 66,
+        "license": "MIT"
+      },
+      {
+        "full_name": "huangserva/3DCellForge",
+        "html_url": "https://github.com/huangserva/3DCellForge",
+        "description": "AI-powered interactive 3D cell generation and exploration studio.",
+        "descKo": "AI 기반 대화형 3D 셀 생성 및 탐사 스튜디오.",
+        "language": "JavaScript",
+        "stargazers_count": 729,
+        "forks_count": 127,
+        "license": "MIT"
+      },
+      {
+        "full_name": "zarazhangrui/beautiful-html-templates",
+        "html_url": "https://github.com/zarazhangrui/beautiful-html-templates",
+        "description": "A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically.",
+        "descKo": "모든 코딩 에이전트가 올바른 템플릿을 선택하고 사용자를 대신하여 자동으로 멋진 덱을 생성할 수 있도록 설계된 HTML 슬라이드 템플릿 라이브러리입니다.",
+        "language": "HTML",
+        "stargazers_count": 727,
+        "forks_count": 66,
+        "license": "MIT"
+      }
+    ],
+    "ai": [
+      {
+        "full_name": "lightseekorg/tokenspeed",
+        "html_url": "https://github.com/lightseekorg/tokenspeed",
+        "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+        "descKo": "TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.",
+        "language": "Python",
+        "stargazers_count": 904,
+        "forks_count": 64,
+        "license": "MIT"
+      },
+      {
+        "full_name": "joshawome/chainreason",
+        "html_url": "https://github.com/joshawome/chainreason",
+        "description": "A benchmark for evaluating LLM reasoning on Ethereum and DeFi tasks",
+        "descKo": "이더리움 및 DeFi 작업에 대한 LLM 추론을 평가하기 위한 벤치마크",
+        "language": "Python",
+        "stargazers_count": 443,
+        "forks_count": 308,
+        "license": "MIT"
+      },
+      {
+        "full_name": "butthtio/solidity-cot-auditor",
+        "html_url": "https://github.com/butthtio/solidity-cot-auditor",
+        "description": "Multi-role chain-of-thought LLM pipeline for Solidity security auditing, layered on top of Slither output.",
+        "descKo": "Slither 출력 위에 계층화된 Solidity 보안 감사를 위한 다중 역할 Chain-of-thought LLM 파이프라인.",
+        "language": "Python",
+        "stargazers_count": 442,
+        "forks_count": 287,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "jmerelnyc/Photo-agents",
+        "html_url": "https://github.com/jmerelnyc/Photo-agents",
+        "description": "Autonomous self-evolving agents. Vision-grounded layered memory and self-written skills for LLM agents that operate your computer.",
+        "descKo": "자율적 자체 진화 에이전트. 컴퓨터를 작동하는 LLM 에이전트를 위한 비전 기반 계층화 메모리 및 자체 작성 기술.",
+        "language": "Python",
+        "stargazers_count": 366,
+        "forks_count": 12,
+        "license": "MIT"
+      },
+      {
+        "full_name": "NirDiamant/Agent_Memory_Techniques",
+        "html_url": "https://github.com/NirDiamant/Agent_Memory_Techniques",
+        "description": "Agent memory for LLMs: 30 runnable Jupyter notebooks covering conversation buffers, vector stores, knowledge graphs, episodic and semantic memory, MemGPT, Mem0, Letta, Zep, Graphiti, LoCoMo benchmarks, and production patterns.",
+        "descKo": "LLM용 에이전트 메모리: 대화 버퍼, 벡터 스토어, 지식 그래프, 에피소드 및 시맨틱 메모리, MemGPT, Mem0, Letta, Zep, Graphiti, LoCoMo 벤치마크 및 생산 패턴을 다루는 실행 가능한 Jupyter 노트북 30권.",
+        "language": "Jupyter Notebook",
+        "stargazers_count": 268,
+        "forks_count": 35,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "bestpracticaI/kalshi-ai-trading-bot",
+        "html_url": "https://github.com/bestpracticaI/kalshi-ai-trading-bot",
+        "description": "Kalshi prediction markets trading bot algorithmic automated trading TypeScript Node.js Kalshi REST API RSA signing OpenRouter LLM CLI npm quant fintech event contracts market making exchange API bot Kalshi SDK",
+        "descKo": "Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK",
+        "language": "TypeScript",
+        "stargazers_count": 207,
+        "forks_count": 286,
+        "license": "MIT"
+      },
+      {
+        "full_name": "OpenSquilla/opensquilla",
+        "html_url": "https://github.com/OpenSquilla/opensquilla",
+        "description": "OpenSquilla — Token-Efficient AI Agent with same budget, higher intelligence density",
+        "descKo": "OpenSquilla — 동일한 예산, 더 높은 인텔리전스 밀도를 가진 토큰 효율적인 AI 에이전트",
+        "language": "Python",
+        "stargazers_count": 191,
+        "forks_count": 15,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "Sayhi-bzb/AIEden",
+        "html_url": "https://github.com/Sayhi-bzb/AIEden",
+        "description": "an LLM-native world and civilization",
+        "descKo": "lLM 원주민 세계와 문명",
+        "language": "TypeScript",
+        "stargazers_count": 161,
+        "forks_count": 6,
+        "license": "AGPL-3.0"
+      },
+      {
+        "full_name": "enmanuelmag/agent-harness-kit",
+        "html_url": "https://github.com/enmanuelmag/agent-harness-kit",
+        "description": "A provider-agnostic scaffolding kit for running structured multi-agent workflows in your codebase.",
+        "descKo": "코드베이스에서 구조화된 다중 에이전트 워크플로를 실행하기 위한 공급자별 스캐폴딩 키트입니다.",
+        "language": "TypeScript",
+        "stargazers_count": 134,
+        "forks_count": 3,
+        "license": null
+      },
+      {
+        "full_name": "imkunal007219/claude-coworker-model",
+        "html_url": "https://github.com/imkunal007219/claude-coworker-model",
+        "description": "Give Claude Code a cheap coworker. CLI tools that delegate bulk I/O to cheap LLMs (Kimi, DeepSeek, Ollama). Save 60-70% of your token budget.",
+        "descKo": "Claude Code에게 값싼 동료를 선물하세요. 저렴한 LLM (Kimi, DeepSeek, Ollama) 에 대량 I/O를 위임하는 CLI 도구. 토큰 예산의 60-70% 를 절약하세요.",
+        "language": "Python",
+        "stargazers_count": 97,
+        "forks_count": 24,
+        "license": "MIT"
+      }
+    ],
+    "web": [
+      {
+        "full_name": "cclank/cell-architecture-studio",
+        "html_url": "https://github.com/cclank/cell-architecture-studio",
+        "description": "Interactive 3D cell architecture gallery built with React and Three.js",
+        "descKo": "React 및 Three.js로 구축된 대화형 3D 셀 아키텍처 갤러리",
+        "language": "TypeScript",
+        "stargazers_count": 167,
+        "forks_count": 28,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Jakubantalik/metal-fx",
+        "html_url": "https://github.com/Jakubantalik/metal-fx",
+        "description": "Animated WebGL liquid-metal effect for React buttons and UI components",
+        "descKo": "React 버튼 및 UI 구성 요소에 대한 애니메이션 WebGL 액체 금속 효과",
+        "language": "TypeScript",
+        "stargazers_count": 158,
+        "forks_count": 10,
+        "license": "MIT"
+      },
+      {
+        "full_name": "ChristianJR19/formcms",
+        "html_url": "https://github.com/ChristianJR19/formcms",
+        "description": "AI Agent: Open-source headless CMS built with ASP.NET Core (C#) and React, featuring REST APIs, GraphQL, and a GrapesJS page designer.",
+        "descKo": "AI 에이전트: REST API, GraphQL 및 GrapesJS 페이지 디자이너를 특징으로 하는 ASP.NET Core (C #) 및 React로 구축된 오픈 소스 헤드리스 CMS.",
+        "language": "C#",
+        "stargazers_count": 64,
+        "forks_count": 10,
+        "license": "MIT"
+      },
+      {
+        "full_name": "wangyi12358/auto-scrape-ai",
+        "html_url": "https://github.com/wangyi12358/auto-scrape-ai",
+        "description": "A WXT + React browser extension that captures HTTP traffic inside Chrome DevTools, refines request/response summaries, and uses an OpenAI-compatible API to produce short and detailed endpoint descriptions (the AI prompt asks for Simplified Chinese output by default).",
+        "descKo": "Chrome DevTools 내에서 HTTP 트래픽을 캡처하고, 요청/응답 요약을 수정하고, OpenAI 호환 API를 사용하여 짧고 상세한 엔드포인트 설명을 생성하는 WXT + React 브라우저 확장 프로그램입니다 (AI 프롬프트는 기본적으로 중국어 간체 출력을 요청합니다).",
+        "language": "TypeScript",
+        "stargazers_count": 53,
+        "forks_count": 7,
+        "license": null
+      },
+      {
+        "full_name": "Yaogui415/newsflow-oss",
+        "html_url": "https://github.com/Yaogui415/newsflow-oss",
+        "description": "An AI-assisted newsroom workflow system for event tracking, evidence organization, approval chains, correction handling, and post-publication monitoring.",
+        "descKo": "이벤트 추적, 증거 정리, 승인 체인, 수정 처리 및 게시 후 모니터링을 위한 AI 지원 뉴스룸 워크플로우 시스템.",
+        "language": "Python",
+        "stargazers_count": 41,
+        "forks_count": 2,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Dragolone/robot-charging-station-miniprogram",
+        "html_url": "https://github.com/Dragolone/robot-charging-station-miniprogram",
+        "description": "  微信小程序 · 机器人远程管理与实时遥控平台 · uni-app (Vue 3) + uniCloud 云函数    + IoT 网关 (MQTT/WebSocket) | WeChat Mini Program for real-time remote robot     fleet management & teleoperation. Built with uni-app (Vue 3), uniCloud           serverless backend, and an MQTT/WebSocket IoT gateway.   ",
+        "descKo": "微信小程序 · 机器人远程管理与实时遥控平台 · · uni-app (Vue 3) + uniCloud 云函数    + IoT 网关 (MQTT/WebSocket) | 실시간 원격 로봇 함대 관리 및 원격 운영을 위한 위챗 미니 프로그램. Uni-App (Vue 3), uniCloud 서버리스 백엔드 및 MQTT/WebSocket IoT 게이트웨이로 구축되었습니다.",
+        "language": "JavaScript",
+        "stargazers_count": 38,
+        "forks_count": 4,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Leonxlnx/todobar",
+        "html_url": "https://github.com/Leonxlnx/todobar",
+        "description": "A right-edge todo sidebar for macOS and Windows.",
+        "descKo": "MacOS 및 Windows용 오른쪽 끝 TODO 사이드바입니다.",
+        "language": "TypeScript",
+        "stargazers_count": 31,
+        "forks_count": 3,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "callstackincubator/agent-cdp",
+        "html_url": "https://github.com/callstackincubator/agent-cdp",
+        "description": "Command-line tool for the Chrome DevTools Protocol (CDP): debug targets, console, traces, heap snapshots, and JavaScript CPU profiling for Chrome, Node.js, and React Native.",
+        "descKo": "Chrome DevTools Protocol (CDP) 용 명령줄 도구: Chrome, Node.js 및 React Native용 디버그 대상, 콘솔, 추적, 힙 스냅샷 및 JavaScript CPU 프로파일링.",
+        "language": "TypeScript",
+        "stargazers_count": 28,
+        "forks_count": 2,
+        "license": "MIT"
+      },
+      {
+        "full_name": "UserZero075/Business-Management-Dashboard",
+        "html_url": "https://github.com/UserZero075/Business-Management-Dashboard",
+        "description": "DevFast Manager is an open-source business management platform for small teams and startups. It allows you to manage projects, infrastructure, finances, team, and tasks from a single web application. Built with Node.js/Fastify/Prisma (backend) and React/Tailwind (frontend).",
+        "descKo": "DevFast Manager는 소규모 팀 및 신생 기업을 위한 오픈 소스 비즈니스 관리 플랫폼입니다. 단일 웹 애플리케이션에서 프로젝트, 인프라, 재무, 팀 및 작업을 관리할 수 있습니다. Node.js/Fastify/Prisma (백엔드) 및 React/Tailwind (프론트엔드) 로 제작되었습니다.",
+        "language": "TypeScript",
+        "stargazers_count": 27,
+        "forks_count": 12,
+        "license": null
+      },
+      {
+        "full_name": "luyou666/weiwuweixin",
+        "html_url": "https://github.com/luyou666/weiwuweixin",
+        "description": "围物为心 - 算法赋能主观个人榜单,分享你的主观| Rank anything. Share your taste.",
+        "descKo": "围物为心 -算法赋能主观个人榜单,分享你的主观 | 무엇이든 순위를 매기세요. 취향을 공유하세요.",
+        "language": "TypeScript",
+        "stargazers_count": 24,
+        "forks_count": 1,
+        "license": "MIT"
+      }
+    ],
+    "tool": [
+      {
+        "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+        "html_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+        "description": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑，每階段有必做練習跟必修閱讀。三語對照（繁中／简中／English）。歡迎社群一起貢獻、優化內容。",
+        "descKo": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑中 文每階段有必做練習跟必修閱讀。三語對照 （繁中 ／简中 ／ 日 本 語 ）。歡迎社群一起貢獻、優化內容。",
+        "language": "Python",
+        "stargazers_count": 730,
+        "forks_count": 66,
+        "license": "MIT"
+      },
+      {
+        "full_name": "louisedesadeleer/clipify",
+        "html_url": "https://github.com/louisedesadeleer/clipify",
+        "description": "Claude Code skill: turn long videos into social-ready clips. Auto-find funny moments, cut, reframe to 9:16 with face-tracking, and burn opus-style captions.",
+        "descKo": "Claude Code 스킬: 긴 동영상을 소셜 클립으로 전환하세요. 재미있는 순간을 자동으로 찾고, 자르고, 얼굴 추적을 통해 9시 16분으로 다시 구성하고, 오푸스 스타일 캡션을 구울 수 있습니다.",
+        "language": "Python",
+        "stargazers_count": 313,
+        "forks_count": 32,
+        "license": "MIT"
+      },
+      {
+        "full_name": "darkrishabh/agent-skills-eval",
+        "html_url": "https://github.com/darkrishabh/agent-skills-eval",
+        "description": "A test runner for agentskills.io-style AI agent skills",
+        "descKo": "Agentskills.io 스타일의 AI 에이전트 스킬 테스트 러너",
+        "language": "TypeScript",
+        "stargazers_count": 276,
+        "forks_count": 10,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Aladdin-IT/MaaNTE",
+        "html_url": "https://github.com/Aladdin-IT/MaaNTE",
+        "description": "MaaNTE download Arknights automation assistant daily tasks infrastructure base management recruitment OCR scripts farming resource planner auto-deploy strategy helper open source tool.",
+        "descKo": "MaaNTE 다운로드 Arknights 자동화 어시스턴트 일일 작업 인프라 기반 관리 채용 OCR 스크립트 파밍 리소스 플래너 자동 배포 전략 도우미 오픈 소스 도구.",
+        "language": "C++",
+        "stargazers_count": 256,
+        "forks_count": 1,
+        "license": "MIT"
+      },
+      {
+        "full_name": "nikolinakovacevic1/MLB-The-Show-26-PC",
+        "html_url": "https://github.com/nikolinakovacevic1/MLB-The-Show-26-PC",
+        "description": "MLB The Show 26 PC: Modding tools, roster editors & Diamond Dynasty API. Automation scripts, market analytics, and save utilities for ultimate gameplay.",
+        "descKo": "MLB The Show 26 PC: 모딩 도구, 로스터 에디터 및 다이아몬드 다이너스티 API. 최고의 게임 플레이를 위한 자동화 스크립트, 시장 분석 및 유틸리티 저장.",
+        "language": "C++",
+        "stargazers_count": 228,
+        "forks_count": 0,
+        "license": "MIT"
+      },
+      {
+        "full_name": "chojs23/concord",
+        "html_url": "https://github.com/chojs23/concord",
+        "description": "A feature rich terminal client for Discord",
+        "descKo": "Discord를 위한 풍부한 기능의 터미널 클라이언트",
+        "language": "Rust",
+        "stargazers_count": 216,
+        "forks_count": 13,
+        "license": "GPL-3.0"
+      },
+      {
+        "full_name": "bestpracticaI/kalshi-ai-trading-bot",
+        "html_url": "https://github.com/bestpracticaI/kalshi-ai-trading-bot",
+        "description": "Kalshi prediction markets trading bot algorithmic automated trading TypeScript Node.js Kalshi REST API RSA signing OpenRouter LLM CLI npm quant fintech event contracts market making exchange API bot Kalshi SDK",
+        "descKo": "Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK",
+        "language": "TypeScript",
+        "stargazers_count": 207,
+        "forks_count": 286,
+        "license": "MIT"
+      },
+      {
+        "full_name": "hoaibaone/OP-Auto-Clicker",
+        "html_url": "https://github.com/hoaibaone/OP-Auto-Clicker",
+        "description": "OP Auto Clicker download automatic mouse clicker automation utility gaming Roblox Minecraft Cookie Clicker fast clicking intervals hotkeys macro mouse button record playback free open source portable PC mobile script trigger settings single double triple.",
+        "descKo": "OP 자동 클리커 다운로드 자동 마우스 클리커 자동화 유틸리티 게임 Roblox Minecraft 쿠키 클리커 빠른 클릭 간격 단축키 매크로 마우스 버튼 레코드 재생 무료 오픈 소스 휴대용 PC 모바일 스크립트 트리거 설정 단일 이중 트리플.",
+        "language": "C#",
+        "stargazers_count": 143,
+        "forks_count": 0,
+        "license": "MIT"
+      },
+      {
+        "full_name": "imkunal007219/claude-coworker-model",
+        "html_url": "https://github.com/imkunal007219/claude-coworker-model",
+        "description": "Give Claude Code a cheap coworker. CLI tools that delegate bulk I/O to cheap LLMs (Kimi, DeepSeek, Ollama). Save 60-70% of your token budget.",
+        "descKo": "Claude Code에게 값싼 동료를 선물하세요. 저렴한 LLM (Kimi, DeepSeek, Ollama) 에 대량 I/O를 위임하는 CLI 도구. 토큰 예산의 60-70% 를 절약하세요.",
+        "language": "Python",
+        "stargazers_count": 97,
+        "forks_count": 24,
+        "license": "MIT"
+      },
+      {
+        "full_name": "TomSolid/myPKA",
+        "html_url": "https://github.com/TomSolid/myPKA",
+        "description": "An AI-powered Personal Knowledge Assistance system with a nine-person AI team baked in. Plain markdown. Any LLM. Yours forever. Picks up where you left off across sessions. Built on the ICOR® methodology.",
+        "descKo": "9명의 AI 팀이 참여하는 AI 기반 개인 지식 지원 시스템입니다. 명백한 감점. 모든 LLM. 영원하세요. 여러 세션에서 중단한 부분부터 다시 시작하세요. ICOR ® 방법론을 기반으로 합니다.",
+        "language": "Python",
+        "stargazers_count": 93,
+        "forks_count": 20,
+        "license": "NOASSERTION"
+      }
+    ],
+    "js": [
+      {
+        "full_name": "huangserva/3DCellForge",
+        "html_url": "https://github.com/huangserva/3DCellForge",
+        "description": "AI-powered interactive 3D cell generation and exploration studio.",
+        "descKo": "AI 기반 대화형 3D 셀 생성 및 탐사 스튜디오.",
+        "language": "JavaScript",
+        "stargazers_count": 730,
+        "forks_count": 127,
+        "license": "MIT"
+      },
+      {
+        "full_name": "kunchenguid/autopreso",
+        "html_url": "https://github.com/kunchenguid/autopreso",
+        "description": "Realtime speech to presentation. Let the whiteboard whiteboard itself.",
+        "descKo": "실시간 연설부터 프레젠테이션까지. 화이트보드 화이트보드 자체를 그대로 둡니다.",
+        "language": "JavaScript",
+        "stargazers_count": 228,
+        "forks_count": 23,
+        "license": "MIT"
+      },
+      {
+        "full_name": "kerlos/pordee",
+        "html_url": "https://github.com/kerlos/pordee",
+        "description": "ตอบสั้นๆ ก็เข้าใจแบบพอดีๆ",
+        "descKo": "ตอบสั้นๆ ก็เข้าใจแบบพอดีๆ",
+        "language": "JavaScript",
+        "stargazers_count": 225,
+        "forks_count": 24,
+        "license": "MIT"
+      },
+      {
+        "full_name": "cv-cat/XHS_ALL_IN_ONE",
+        "html_url": "https://github.com/cv-cat/XHS_ALL_IN_ONE",
+        "description": "XHS_ALL_IN_ONE 小红书全域运营",
+        "descKo": "XHS_ALL_IN_ONE 小红书全域运营",
+        "language": "JavaScript",
+        "stargazers_count": 215,
+        "forks_count": 98,
+        "license": null
+      },
+      {
+        "full_name": "Binarylunanotice/blooket",
+        "html_url": "https://github.com/Binarylunanotice/blooket",
+        "description": "blooket gui || blooket || blooket api",
+        "descKo": "blooket gui || blooket || blooket api",
+        "language": "JavaScript",
+        "stargazers_count": 112,
+        "forks_count": 0,
+        "license": "MIT"
+      },
+      {
+        "full_name": "m00grin/ph-intercept",
+        "html_url": "https://github.com/m00grin/ph-intercept",
+        "description": "A Pi-hole DNS visual dashboard. Blocking is represented by an interceptor ship destroying 'blocked query' baddies, space invaders style.",
+        "descKo": "파이홀 DNS 비주얼 대시보드. 차단은 우주 침략자 스타일인 '차단된 쿼리' 배디를 파괴하는 요격선으로 표시됩니다.",
+        "language": "JavaScript",
+        "stargazers_count": 102,
+        "forks_count": 4,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Blueemi/codex-eu-patcher",
+        "html_url": "https://github.com/Blueemi/codex-eu-patcher",
+        "description": null,
+        "descKo": null,
+        "language": "JavaScript",
+        "stargazers_count": 103,
+        "forks_count": 7,
+        "license": null
+      },
+      {
+        "full_name": "killervillsy/SessionToJson",
+        "html_url": "https://github.com/killervillsy/SessionToJson",
+        "description": null,
+        "descKo": null,
+        "language": "JavaScript",
+        "stargazers_count": 101,
+        "forks_count": 26,
+        "license": null
+      },
+      {
+        "full_name": "ChypherFish3r/coinbase-trading-bot",
+        "html_url": "https://github.com/ChypherFish3r/coinbase-trading-bot",
+        "description": "coinbase trading bot for momentum strategies with optional profit transfers, CSV backtests, and a clean CLI",
+        "descKo": "선택적 이익 이전, CSV 백테스트 및 CLI를 통한 모멘텀 전략을 위한 코인베이스 트레이딩 봇",
+        "language": "JavaScript",
+        "stargazers_count": 88,
+        "forks_count": 149,
+        "license": null
+      },
+      {
+        "full_name": "ethgan/Cloudflare_TextSpace_Worker",
+        "html_url": "https://github.com/ethgan/Cloudflare_TextSpace_Worker",
+        "description": "重磅福利 | 拥抱Cloudflare 文本直链网盘 | 拒绝限流 | CDN加速 | 100%免费 https://www.youtube.com/watch?v=QZUx4pHf0J4",
+        "descKo": "重磅福利 | 拥抱클라우드플레어 文本直链网盘 | 拒绝限流 | CDN加速 | 100%免费 https://www.youtube.com/watch?v=QZUx4pHf0J4",
+        "language": "JavaScript",
+        "stargazers_count": 82,
+        "forks_count": 74,
+        "license": "GPL-3.0"
+      }
+    ],
+    "ts": [
+      {
+        "full_name": "strukto-ai/mirage",
+        "html_url": "https://github.com/strukto-ai/mirage",
+        "description": "A Unified Virtual Filesystem For AI Agents",
+        "descKo": "AI 에이전트를 위한 통합 가상 파일 시스템",
+        "language": "TypeScript",
+        "stargazers_count": 1794,
+        "forks_count": 108,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "moxailoo/univ3-pool-lens",
+        "html_url": "https://github.com/moxailoo/univ3-pool-lens",
+        "description": "A focused TypeScript toolkit for inspecting Uniswap V3 pools — liquidity distribution, fee yield, and impermanent-loss math from your terminal.",
+        "descKo": "Uniswap V3 풀을 검사하기 위한 초점 TypeScript 툴킷 — 터미널에서 유동성 분포, 수수료 수익률 및 영구 손실 수학.",
+        "language": "TypeScript",
+        "stargazers_count": 439,
+        "forks_count": 280,
+        "license": "MIT"
+      },
+      {
+        "full_name": "Ch1rpy2613/Mirrai",
+        "html_url": "https://github.com/Ch1rpy2613/Mirrai",
+        "description": null,
+        "descKo": null,
+        "language": "TypeScript",
+        "stargazers_count": 408,
+        "forks_count": 4,
+        "license": null
+      },
+      {
+        "full_name": "BuluBulugege/Free-BAI",
+        "html_url": "https://github.com/BuluBulugege/Free-BAI",
+        "description": null,
+        "descKo": null,
+        "language": "TypeScript",
+        "stargazers_count": 296,
+        "forks_count": 102,
+        "license": null
+      },
+      {
+        "full_name": "darkrishabh/agent-skills-eval",
+        "html_url": "https://github.com/darkrishabh/agent-skills-eval",
+        "description": "A test runner for agentskills.io-style AI agent skills",
+        "descKo": "Agentskills.io 스타일의 AI 에이전트 스킬 테스트 러너",
+        "language": "TypeScript",
+        "stargazers_count": 276,
+        "forks_count": 10,
+        "license": "MIT"
+      },
+      {
+        "full_name": "TitanFlow-Systems/best-of-algorithmic-trading",
+        "html_url": "https://github.com/TitanFlow-Systems/best-of-algorithmic-trading",
+        "description": "best-of algorithmic trading quant finance crypto bots frameworks APIs TA indicators libraries Freqtrade Hummingbot OctoBot Jesse Zipline backtrader CCXT Lean StockSharp Python Node Rust Go TypeScript C# Java forex stocks derivatives polymarket prediction-markets courses books YouTube Telegram communities fintech opensource weekly ranked star-score",
+        "descKo": "최고의 알고리즘 거래 퀀트 파이낸스 암호화 봇 프레임워크 API TA 지표 라이브러리 Freqtrade Hummingbot OctoBot Jesse Zipline backtrader CCXT Lean StockSharp Python Node Rust Go TypeScript C # Java 외환 주식 파생상품 폴리마켓 예측-마켓 코스 책 YouTube 텔레그램 커뮤니티 핀테크 오픈소스 주간 순위 별 점수",
+        "language": "TypeScript",
+        "stargazers_count": 272,
+        "forks_count": 275,
+        "license": "CC-BY-SA-4.0"
+      },
+      {
+        "full_name": "Composio-HQ/polymarket-kalshi-arbitrage-bot",
+        "html_url": "https://github.com/Composio-HQ/polymarket-kalshi-arbitrage-bot",
+        "description": "Polymarket Kalshi arbitrage prediction-markets trading-bot TypeScript Node.js CLOB Polygon ethers automated-trading spread-trading DeFi crypto algorithmic-trading market-making Kalshi-API Polymarket-CLOB express axios dotenv",
+        "descKo": "Polymarket Kalshi 차익 거래 예측 시장 trading-bot TypeScript Node.js CLOB Polygon ethers automated-trading spread-trading DeFi crypto algorithmic-trading market-making Kalshi-API Polymarket-CLOB express axios dotenv",
+        "language": "TypeScript",
+        "stargazers_count": 243,
+        "forks_count": 430,
+        "license": null
+      },
+      {
+        "full_name": "TheSashaDev/girl-agent",
+        "html_url": "https://github.com/TheSashaDev/girl-agent",
+        "description": "ИИ-девушка с человеческим поведением: сон, настроение, расписание, память, стадии отношений и конфликты. Userbot mode через MTProto — реагирует, печатает, ставит реакции. Anti-AI промпт убирает ChatGPT-повадки. Не чат-бот — персонаж с состоянием.",
+        "descKo": "ИИ-девушка с человеческим поведением: сон, настроение, расписание, память, стадии отношений и конфликты. Userbot mode через MTProto — реагирует, печатает, ставит реакции. Anti-AI промпт убирает ChatGPT-повадки. Не чат-бот — персонаж с стоянием.",
+        "language": "TypeScript",
+        "stargazers_count": 218,
+        "forks_count": 30,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "bestpracticaI/kalshi-ai-trading-bot",
+        "html_url": "https://github.com/bestpracticaI/kalshi-ai-trading-bot",
+        "description": "Kalshi prediction markets trading bot algorithmic automated trading TypeScript Node.js Kalshi REST API RSA signing OpenRouter LLM CLI npm quant fintech event contracts market making exchange API bot Kalshi SDK",
+        "descKo": "Kalshi 예측 시장 거래 봇 알고리즘 자동 거래 TypeScript Node.js Kalshi REST API RSA 서명 OpenRouter LLM CLI npm quant fintech event contracts market making exchange API 봇 Kalshi SDK",
+        "language": "TypeScript",
+        "stargazers_count": 207,
+        "forks_count": 286,
+        "license": "MIT"
+      },
+      {
+        "full_name": "alvinunreal/openpets",
+        "html_url": "https://github.com/alvinunreal/openpets",
+        "description": "Desktop pets for AI coding agents. Install pets, connect Claude Code via MCP, and see live coding status on your desktop.",
+        "descKo": "AI 코딩 에이전트를 위한 데스크톱 애완동물. 애완동물을 설치하고 MCP를 통해 Claude Code를 연결하면 데스크톱에서 실시간 코딩 상태를 확인할 수 있습니다.",
+        "language": "TypeScript",
+        "stargazers_count": 185,
+        "forks_count": 8,
+        "license": "MIT"
+      }
+    ],
+    "python": [
+      {
+        "full_name": "yaojingang/yao-open-prompts",
+        "html_url": "https://github.com/yaojingang/yao-open-prompts",
+        "description": "Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "descKo": "야오 오픈 프롬프트 ：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+        "language": "Python",
+        "stargazers_count": 1549,
+        "forks_count": 247,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "lightseekorg/tokenspeed",
+        "html_url": "https://github.com/lightseekorg/tokenspeed",
+        "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+        "descKo": "TokenSpeed는 빛의 속도 LLM 추론 엔진입니다.",
+        "language": "Python",
+        "stargazers_count": 904,
+        "forks_count": 64,
+        "license": "MIT"
+      },
+      {
+        "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+        "html_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+        "description": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑，每階段有必做練習跟必修閱讀。三語對照（繁中／简中／English）。歡迎社群一起貢獻、優化內容。",
+        "descKo": "AI Agent 中文學習地圖 — 從零開始的結構化學習路徑中 文每階段有必做練習跟必修閱讀。三語對照 （繁中 ／简中 ／ 日 本 語 ）。歡迎社群一起貢獻、優化內容。",
+        "language": "Python",
+        "stargazers_count": 730,
+        "forks_count": 66,
+        "license": "MIT"
+      },
+      {
+        "full_name": "BigPizzaV3/CodexPlusPlus",
+        "html_url": "https://github.com/BigPizzaV3/CodexPlusPlus",
+        "description": "一个CodexApp的增强工具",
+        "descKo": "一个CodexApp的增强工具",
+        "language": "Python",
+        "stargazers_count": 687,
+        "forks_count": 42,
+        "license": null
+      },
+      {
+        "full_name": "kitft/natural_language_autoencoders",
+        "html_url": "https://github.com/kitft/natural_language_autoencoders",
+        "description": null,
+        "descKo": null,
+        "language": "Python",
+        "stargazers_count": 450,
+        "forks_count": 63,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "joshawome/chainreason",
+        "html_url": "https://github.com/joshawome/chainreason",
+        "description": "A benchmark for evaluating LLM reasoning on Ethereum and DeFi tasks",
+        "descKo": "이더리움 및 DeFi 작업에 대한 LLM 추론을 평가하기 위한 벤치마크",
+        "language": "Python",
+        "stargazers_count": 443,
+        "forks_count": 308,
+        "license": "MIT"
+      },
+      {
+        "full_name": "butthtio/solidity-cot-auditor",
+        "html_url": "https://github.com/butthtio/solidity-cot-auditor",
+        "description": "Multi-role chain-of-thought LLM pipeline for Solidity security auditing, layered on top of Slither output.",
+        "descKo": "Slither 출력 위에 계층화된 Solidity 보안 감사를 위한 다중 역할 Chain-of-thought LLM 파이프라인.",
+        "language": "Python",
+        "stargazers_count": 442,
+        "forks_count": 287,
+        "license": "NOASSERTION"
+      },
+      {
+        "full_name": "fendouai/CodexSaver",
+        "html_url": "https://github.com/fendouai/CodexSaver",
+        "description": "Make Codex cheaper without making it dumber with DeepSeek.",
+        "descKo": "DeepSeek으로 코덱스를 더 멍청하게 만들지 않고도 더 저렴하게 만들 수 있습니다.",
+        "language": "Python",
+        "stargazers_count": 397,
+        "forks_count": 21,
+        "license": null
+      },
+      {
+        "full_name": "jmerelnyc/Photo-agents",
+        "html_url": "https://github.com/jmerelnyc/Photo-agents",
+        "description": "Autonomous self-evolving agents. Vision-grounded layered memory and self-written skills for LLM agents that operate your computer.",
+        "descKo": "자율적 자체 진화 에이전트. 컴퓨터를 작동하는 LLM 에이전트를 위한 비전 기반 계층화 메모리 및 자체 작성 기술.",
+        "language": "Python",
+        "stargazers_count": 366,
+        "forks_count": 12,
+        "license": "MIT"
+      },
+      {
+        "full_name": "huggingface/nanowhale",
+        "html_url": "https://github.com/huggingface/nanowhale",
+        "description": null,
+        "descKo": null,
+        "language": "Python",
+        "stargazers_count": 326,
+        "forks_count": 32,
+        "license": null
+      }
+    ],
+    "rust": [
+      {
+        "full_name": "PentHertz/LUKSbox",
+        "html_url": "https://github.com/PentHertz/LUKSbox",
+        "description": "Store sensitive files in the cloud, or on shared media without trusting the host. LUKSbox is a Rust-based encrypted-container tool with passphrase, FIDO2 (YubiKey, Titan, Nitrokey, Windows Hello), TPM 2.0, and hybrid post-quantum (ML-KEM-768 / 1024) keyslots. Mounts as a real drive on Linux, macOS, and Windows.",
+        "descKo": "민감한 파일은 호스트를 신뢰하지 않고 클라우드나 공유 미디어에 저장하세요. LUKSbox는 암호, FIDO2 (YubiKey, Titan, Nitrokey, Windows Hello), TPM 2.0 및 하이브리드 양자 후 (ML-KEM-768/1024) 키 슬롯이 있는 Rust 기반 암호화 컨테이너 도구입니다. Linux, macOS 및 Windows에서 실제 드라이브로 마운트됩니다.",
+        "language": "Rust",
+        "stargazers_count": 401,
+        "forks_count": 33,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "Avarok-Cybersecurity/atlas",
+        "html_url": "https://github.com/Avarok-Cybersecurity/atlas",
+        "description": "Pure Rust Inference Engine",
+        "descKo": "순수한 녹 추론 엔진",
+        "language": "Rust",
+        "stargazers_count": 225,
+        "forks_count": 24,
+        "license": "AGPL-3.0"
+      },
+      {
+        "full_name": "chojs23/concord",
+        "html_url": "https://github.com/chojs23/concord",
+        "description": "A feature rich terminal client for Discord",
+        "descKo": "Discord를 위한 풍부한 기능의 터미널 클라이언트",
+        "language": "Rust",
+        "stargazers_count": 216,
+        "forks_count": 13,
+        "license": "GPL-3.0"
+      },
+      {
+        "full_name": "wojtczyk/trust",
+        "html_url": "https://github.com/wojtczyk/trust",
+        "description": "TRUST – Coding Rust like it's 1989",
+        "descKo": "신뢰 – 1989년과 같은 러스트 코딩",
+        "language": "Rust",
+        "stargazers_count": 197,
+        "forks_count": 4,
+        "license": "MIT"
+      },
+      {
+        "full_name": "reakjra/omikuji",
+        "html_url": "https://github.com/reakjra/omikuji",
+        "description": "Qt/QML based game launcher for Linux",
+        "descKo": "Linux용 Qt/QML 기반 게임 런처",
+        "language": "Rust",
+        "stargazers_count": 171,
+        "forks_count": 4,
+        "license": "GPL-3.0"
+      },
+      {
+        "full_name": "ThatXliner/rust-but-lisp",
+        "html_url": "https://github.com/ThatXliner/rust-but-lisp",
+        "description": "Rust but LISP",
+        "descKo": "Rust but LISP",
+        "language": "Rust",
+        "stargazers_count": 106,
+        "forks_count": 0,
+        "license": null
+      },
+      {
+        "full_name": "DeepSeek-TUI/DeepSeek-TUI",
+        "html_url": "https://github.com/DeepSeek-TUI/DeepSeek-TUI",
+        "description": "Install DeepSeek TUI - Coding agent for DeepSeek models that runs in your terminal.",
+        "descKo": "터미널에서 실행되는 DeepSeek 모델용 DeepSeek TUI - 코딩 에이전트를 설치합니다.",
+        "language": "Rust",
+        "stargazers_count": 104,
+        "forks_count": 15,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "liguan-89/deecodex",
+        "html_url": "https://github.com/liguan-89/deecodex",
+        "description": "DeepSeek API → Codex CLI 兼容代理（Responses API 翻译 + 思考模式 + 工具调用 + MiniMax 视觉路由）",
+        "descKo": "DeepSeek API → Codex CLI 兼容代理（ 응답 API 翻译 + 思考模式 + 工具调用 + MiniMax 视觉路由）",
+        "language": "Rust",
+        "stargazers_count": 89,
+        "forks_count": 6,
+        "license": "MIT"
+      },
+      {
+        "full_name": "chrismoos/1xbts",
+        "html_url": "https://github.com/chrismoos/1xbts",
+        "description": "CDMA2000 Open Source Cellular Network ",
+        "descKo": "CDMA2000 오픈 소스 셀룰러 네트워크",
+        "language": "Rust",
+        "stargazers_count": 88,
+        "forks_count": 10,
+        "license": "Apache-2.0"
+      },
+      {
+        "full_name": "beava-dev/beava",
+        "html_url": "https://github.com/beava-dev/beava",
+        "description": "Real-time feature server for fraud, ad-tech, and behavioral analytics.",
+        "descKo": "사기, 광고 기술 및 행동 분석을 위한 실시간 기능 서버.",
+        "language": "Rust",
+        "stargazers_count": 85,
+        "forks_count": 4,
+        "license": "Apache-2.0"
+      }
+    ],
+    "go": [
+      {
+        "full_name": "ThisIsDara/mhr-cfw-go",
+        "html_url": "https://github.com/ThisIsDara/mhr-cfw-go",
+        "description": "A local proxy that runs on your machine and forwards traffic through Google.",
+        "descKo": "컴퓨터에서 실행되고 Google을 통해 트래픽을 전달하는 로컬 프록시입니다.",
+        "language": "Go",
+        "stargazers_count": 366,
+        "forks_count": 33,
+        "license": "MIT"
+      },
+      {
+        "full_name": "ajavadinezhad/zyrln",
+        "html_url": "https://github.com/ajavadinezhad/zyrln",
+        "description": "Domain-fronting relay that routes traffic through Google infrastructure to bypass DPI-based censorship,  Android VPN    app + desktop proxy",
+        "descKo": "DPI 기반 검열, Android VPN 앱 + 데스크톱 프록시를 우회하기 위해 Google 인프라를 통해 트래픽을 라우팅하는 도메인 프론팅 릴레이",
+        "language": "Go",
+        "stargazers_count": 356,
+        "forks_count": 53,
+        "license": "MIT"
+      },
+      {
+        "full_name": "gofsnotify/fsnotify",
+        "html_url": "https://github.com/gofsnotify/fsnotify",
+        "description": "Cross-platform file system notifications for Go.",
+        "descKo": "Go에 대한 교차 플랫폼 파일 시스템 알림.",
+        "language": "Go",
+        "stargazers_count": 181,
+        "forks_count": 5,
+        "license": "MIT"
+      },
+      {
+        "full_name": "MiChongs/karpov-gateway",
+        "html_url": "https://github.com/MiChongs/karpov-gateway",
+        "description": "Karpov Gateway — REST API gateway + Next.js console. Go (Gin+gRPC) + PostgreSQL + Redis + OAuth2 (Linux.do) + TOTP 2FA + encrypted credential pool",
+        "descKo": "Karpov 게이트웨이 — REST API 게이트웨이 + Next.js 콘솔. Go (Gin + gRPC) + PostgreSQL + Redis + OAuth2 (Linux.do) + TOTP 2FA + 암호화된 자격 증명 풀",
+        "language": "Go",
+        "stargazers_count": 99,
+        "forks_count": 16,
+        "license": "MIT"
+      },
+      {
+        "full_name": "nyarime/gho",
+        "html_url": "https://github.com/nyarime/gho",
+        "description": "Pure Go Norton Ghost GHO disk image parser — no CGo, single binary",
+        "descKo": "Pure Go Norton Ghost GHO 디스크 이미지 파서 — CGo 없음, 단일 바이너리",
+        "language": "Go",
+        "stargazers_count": 82,
+        "forks_count": 6,
+        "license": "MIT"
+      },
+      {
+        "full_name": "usewhale/whale",
+        "html_url": "https://github.com/usewhale/whale",
+        "description": "DeepSeek CLI / terminal coding agent with MCP, Skills, shell tools, and prefix-cache optimization.",
+        "descKo": "MCP, 기술, 셸 도구 및 접두사 캐시 최적화를 갖춘 DeepSeek CLI/터미널 코딩 에이전트.",
+        "language": "Go",
+        "stargazers_count": 73,
+        "forks_count": 6,
+        "license": "MIT"
+      },
+      {
+        "full_name": "openclaw/clickclack",
+        "html_url": "https://github.com/openclaw/clickclack",
+        "description": "ClickClackClaw - The chat app with claws.",
+        "descKo": "ClickClackClaw - 발톱이 있는 채팅 앱.",
+        "language": "Go",
+        "stargazers_count": 58,
+        "forks_count": 16,
+        "license": "MIT"
+      },
+      {
+        "full_name": "rudrankriyam/Google-Health-CLI",
+        "html_url": "https://github.com/rudrankriyam/Google-Health-CLI",
+        "description": "Unofficial Google-Health-CLI for the Google Health API, written in Go",
+        "descKo": "Go로 작성된 Google Health API용 비공식 Google-Health-CLI",
+        "language": "Go",
+        "stargazers_count": 52,
+        "forks_count": 2,
+        "license": "MIT"
+      },
+      {
+        "full_name": "tidwall/btype",
+        "html_url": "https://github.com/tidwall/btype",
+        "description": "B-tree based collection types for Go",
+        "descKo": "Go용 B-트리 기반 컬렉션 유형",
+        "language": "Go",
+        "stargazers_count": 51,
+        "forks_count": 0,
+        "license": "MIT"
+      },
+      {
+        "full_name": "compozy/skeeper",
+        "html_url": "https://github.com/compozy/skeeper",
+        "description": "Version your spec artifacts — PRDs, tech specs, ADRs, AI plans — in a sidecar Git repository, without polluting your main PRs.",
+        "descKo": "주요 PR을 오염시키지 않고 사이드카 Git 저장소에서 PRD, 기술 사양, ADR, AI 계획과 같은 사양 아티팩트를 버전업합니다.",
+        "language": "Go",
+        "stargazers_count": 46,
+        "forks_count": 2,
+        "license": "MIT"
+      }
+    ]
+  }
+}
