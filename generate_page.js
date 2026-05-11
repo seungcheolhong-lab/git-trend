@@ -166,8 +166,8 @@ function fetchReadme(full_name) {
 function callGemini(repo, readme) {
   if (!GEMINI_KEY) return Promise.resolve(null);
 
-  const prompt = `다음 GitHub 레포지토리 정보를 바탕으로, 개발자 대상 뉴스레터 항목처럼 2~3문장으로 한국어로 설명해줘.
-"왜 지금 주목받고 있는가"에 초점을 맞추고, 마크다운 없이 평문으로만 작성해.
+  const prompt = `다음 GitHub 레포지토리 정보를 바탕으로, 개발자 대상 뉴스레터 항목처럼 2~3문장으로 설명해줘.
+"왜 지금 주목받고 있는가"에 초점을 맞춰. 반드시 한국어로만 작성해. 영어, 중국어 등 다른 언어는 절대 쓰지 마. 마크다운 없이 평문으로만.
 
 레포: ${repo.full_name}
 설명: ${repo.description || "없음"}
@@ -178,6 +178,69 @@ README: ${readme || "없음"}`;
   const bodyStr = JSON.stringify({
     contents: [{ parts: [{ text: prompt }] }],
     generationConfig: { maxOutputTokens: 200, temperature: 0.7 },
+  });
+
+  return new Promise((resolve) => {
+    const req = https.request({
+      hostname: "generativelanguage.googleapis.com",
+      path: `/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(bodyStr) },
+    }, (res) => {
+      let data = "";
+      res.on("data", c => data += c);
+      res.on("end", () => {
+        try {
+          const text = JSON.parse(data)?.candidates?.[0]?.content?.parts?.[0]?.text;
+          resolve(text?.trim() || null);
+        } catch { resolve(null); }
+      });
+    });
+    req.on("error", () => resolve(null));
+    req.write(bodyStr);
+    req.end();
+  });
+}
+
+// ── Hacker News ──────────────────────────────────────────────────────────────
+
+async function fetchHNStories() {
+  const weekAgo = Math.floor((Date.now() - 7 * 86400000) / 1000);
+  const params = new URLSearchParams({
+    tags: "story",
+    numericFilters: `points>100,created_at_i>${weekAgo}`,
+    hitsPerPage: "15",
+  });
+  const { status, body } = await httpGet("hn.algolia.com", `/api/v1/search?${params}`);
+  if (status !== 200) throw new Error(`HN API 오류 ${status}`);
+  const hits = JSON.parse(body).hits ?? [];
+  return hits
+    .sort((a, b) => b.points - a.points)
+    .slice(0, 8)
+    .map(h => ({
+      title: h.title,
+      url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
+      hnUrl: `https://news.ycombinator.com/item?id=${h.objectID}`,
+      points: h.points,
+      num_comments: h.num_comments,
+      author: h.author,
+    }));
+}
+
+function callGeminiHN(story) {
+  if (!GEMINI_KEY) return Promise.resolve(null);
+
+  const prompt = `다음 Hacker News 기사를 개발자 대상 뉴스레터 항목처럼 2문장으로 한국어로 설명해줘.
+기사가 왜 개발자 커뮤니티에서 화제가 됐는지에 초점을 맞춰. 반드시 한국어로만 작성해. 마크다운 없이 평문으로만.
+
+제목: ${story.title}
+URL: ${story.url}
+포인트: ${story.points}
+댓글 수: ${story.num_comments}`;
+
+  const bodyStr = JSON.stringify({
+    contents: [{ parts: [{ text: prompt }] }],
+    generationConfig: { maxOutputTokens: 150, temperature: 0.7 },
   });
 
   return new Promise((resolve) => {
@@ -490,7 +553,7 @@ async function main() {
     await new Promise(r => setTimeout(r, 1500));
   }
 
-  // 고유 레포 모아서 Gemini 요약 생성
+  // 고유 레포 Gemini 요약 생성
   if (GEMINI_KEY) {
     const uniqueRepos = new Map();
     for (const repos of Object.values(allData)) {
@@ -511,9 +574,26 @@ async function main() {
     }
   }
 
+  // Hacker News 이번 주 화제
+  console.log("\nHacker News 조회 중...");
+  let hnStories = [];
+  try {
+    hnStories = await fetchHNStories();
+    if (GEMINI_KEY) {
+      console.log(`HN Gemini 요약 생성 중... (${hnStories.length}개)`);
+      for (const story of hnStories) {
+        process.stdout.write(`  HN: ${story.title.slice(0, 50)} ...\n`);
+        story.aiSummary = await callGeminiHN(story);
+        await new Promise(r => setTimeout(r, 1200));
+      }
+    }
+  } catch (err) {
+    console.error(`HN 오류: ${err.message}`);
+  }
+
   const weekId = getWeekId();
   const stats = computeStats(allData);
-  const weekJson = { week: weekId, generatedAt: new Date().toISOString(), stats, repos: allData };
+  const weekJson = { week: weekId, generatedAt: new Date().toISOString(), stats, repos: allData, hnStories };
 
   fs.writeFileSync(path.join(dataDir, `${weekId}.json`), JSON.stringify(weekJson, null, 2), "utf8");
 

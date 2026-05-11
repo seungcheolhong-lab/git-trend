@@ -75,6 +75,28 @@ def lang_diff_rows(latest, prev):
     return rows
 
 
+def hn_card(i, story):
+    url = story.get("url") or story.get("hnUrl", "#")
+    hn_url = story.get("hnUrl", "#")
+    title = story.get("title", "")
+    points = story.get("points", 0)
+    comments = story.get("num_comments", 0)
+    summary = story.get("aiSummary") or ""
+
+    return f"""
+    <div style="border-bottom:1px solid #21262d;padding:14px 0;">
+      <div style="margin-bottom:6px;">
+        <span style="color:#8b949e;font-size:12px;margin-right:8px;">#{i}</span>
+        <a href="{url}" style="color:#e6edf3;text-decoration:none;font-size:14px;font-weight:600;">{title}</a>
+      </div>
+      <div style="margin-bottom:8px;">
+        <span style="color:#e3b341;font-size:12px;margin-right:10px;">▲ {points:,}점</span>
+        <a href="{hn_url}" style="color:#8b949e;font-size:12px;text-decoration:none;">💬 {comments}개 댓글</a>
+      </div>
+      {f'<p style="color:#8b949e;font-size:13px;line-height:1.6;margin:0;">{summary}</p>' if summary else ""}
+    </div>"""
+
+
 def build_html(latest, prev):
     week = latest["week"]
     all_repos = latest["repos"]["all"]
@@ -89,6 +111,17 @@ def build_html(latest, prev):
         <tbody>{brief}</tbody>
       </table>
     </div>""" if all_repos[5:10] else ""
+
+    hn_stories = latest.get("hnStories") or []
+    hn_section = ""
+    if hn_stories:
+        hn_cards = "".join(hn_card(i + 1, s) for i, s in enumerate(hn_stories[:6]))
+        hn_section = f"""
+    <div style="background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px 24px;margin-bottom:12px;">
+      <h2 style="font-size:.95rem;margin:0 0 4px;color:#e6edf3;font-weight:700;">🟠 Hacker News 이번 주 화제</h2>
+      <p style="color:#8b949e;font-size:12px;margin:0 0 14px;">개발자 커뮤니티에서 가장 많이 논의된 주제</p>
+      {hn_cards}
+    </div>"""
 
     lang_section = ""
     if prev:
@@ -120,6 +153,7 @@ def build_html(latest, prev):
     {featured}
     {brief_section}
     {lang_section}
+    {hn_section}
 
     <div style="text-align:center;padding:16px 0;">
       <a href="{PAGES_URL}" style="background:#1f6feb;color:#fff;text-decoration:none;padding:11px 30px;border-radius:8px;font-size:14px;font-weight:600;">대시보드 전체 보기 →</a>
