@@ -55,9 +55,13 @@ function parseTrendingHTML(html) {
   for (let i = 1; i < blocks.length; i++) {
     const b = blocks[i];
 
-    const nameMatch = b.match(/href="\/([\w.-]+\/[\w.-]+)"\s*>/);
+    // repo 링크는 반드시 <h2> 안에 있음 (apps/ 같은 다른 링크 제외)
+    const h2Match = b.match(/<h2[^>]*>([\s\S]*?)<\/h2>/);
+    if (!h2Match) continue;
+    const nameMatch = h2Match[1].match(/href="\/([\w.-]+\/[\w.-]+)"/);
     if (!nameMatch) continue;
     const full_name = nameMatch[1];
+    if (full_name.startsWith("apps/")) continue;
 
     let description = null;
     const descMatch = b.match(/col-9[^"]*"[^>]*>([\s\S]*?)<\/p>/);
